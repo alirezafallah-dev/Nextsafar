@@ -1,0 +1,113 @@
+# ============================================
+# NextSafar Project - Main .gitignore
+# ============================================
+
+# سیستم‌عامل
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# محیط‌های مختلف (حساس)
+.env
+.env.local
+.env.*.local
+*.log
+
+# ============================================
+# Next.js Frontend
+# ============================================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# ============================================
+# Laravel Backend
+# ============================================
+backend/vendor/
+backend/node_modules/
+backend/.env
+backend/.env.backup
+backend/storage/*.key
+backend/storage/logs/*.log
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/bootstrap/cache/*
+backend/public/hot
+backend/public/storage
+backend/coverage/
+backend/.phpunit.result.cache
+backend/Homestead.json
+backend/Homestead.yaml
+backend/auth.json
+
+# ============================================
+# WordPress CMS
+# ============================================
+# کل وردپرس را نادیده می‌گیریم (فقط پلاگین خودمان را نگه می‌داریم)
+cms/wp-admin/
+cms/wp-includes/
+cms/wp-content/plugins/*/
+!cms/wp-content/plugins/nextsafar-core/
+cms/wp-content/themes/*/
+!cms/wp-content/themes/nextsafar-headless/
+cms/wp-content/uploads/*
+cms/wp-content/upgrade/
+cms/wp-content/cache/
+cms/wp-content/backup-db/
+cms/wp-content/backups/
+cms/wp-config.php
+cms/.htaccess
+cms/readme.html
+cms/license.txt
+cms/*.sql
+cms/*.sql.gz
+
+# ============================================
+# پلاگین NextSafar Core
+# ============================================
+# فایل‌های موقت و build
+*.zip
+*.tar.gz
+backups/
+
+# ============================================
+# Database
+# ============================================
+*.sql
+*.sql.gz
+*.sql.bz2
+backups/
+database/
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ============================================
+# Misc
+# ============================================
+*.pem
+*.key
+secrets/
+.DS_Store
+Thumbs.db

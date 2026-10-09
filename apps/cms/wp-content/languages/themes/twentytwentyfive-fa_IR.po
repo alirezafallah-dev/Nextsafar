@@ -1,0 +1,2441 @@
+# Translation of Themes - Twenty Twenty-Five in Persian
+# This file is distributed under the same license as the Themes - Twenty Twenty-Five package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-03 20:48:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: fa\n"
+"Project-Id-Version: Themes - Twenty Twenty-Five\n"
+
+#. Theme Name of the theme
+#: style.css patterns/footer-columns.php:66 patterns/footer-newsletter.php:42
+#: patterns/footer.php:75 patterns/page-portfolio-home.php:226
+#, gp-priority: high
+msgid "Twenty Twenty-Five"
+msgstr "دو هزار و بیست و پنج"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "Twenty Twenty-Five emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide."
+msgstr "دو هزار و بیست و پنج بر سادگی و سازگاری تأکید دارد. این پوسته با ارائه گزینه‌های طراحی انعطاف‌پذیر و مجموعه‌ای متنوع از الگوها برای انواع مختلف برگه‌ها، مانند خدمات و برگه‌های فرود، گزینه‌ای ایده‌آل برای ساخت وبلاگ‌های شخصی، نمونه‌کارهای حرفه‌ای، مجلات آنلاین یا وب‌سایت‌های تجاری است. قالب‌های این پوسته انواع سبک‌های وبلاگ، از متمرکز بر متن تا طرح‌بندی‌های تصویری سنگین را پوشش می‌دهد. همچنین با پشتیبانی از حروفچینی بین‌المللی و تخته‌رنگ‌های متنوع، دسترسی‌پذیری و سفارشی‌سازی را برای کاربران در سراسر جهان تضمین می‌کند."
+
+#: patterns/template-home-vertical-header-blog.php
+msgctxt "Pattern title"
+msgid "Right-aligned home"
+msgstr "خانه راست‌چین"
+
+#: patterns/template-archive-vertical-header-blog.php
+msgctxt "Pattern title"
+msgid "Right-aligned archive"
+msgstr "بایگانی راست‌چین"
+
+#: patterns/template-query-loop-text-blog.php
+msgctxt "Pattern title"
+msgid "Text blog query loop"
+msgstr "حلقه کوئری بلاگ متن"
+
+#: patterns/template-search-text-blog.php
+msgctxt "Pattern title"
+msgid "Text blog search results"
+msgstr "نتایج جستجوی بلاگ متن"
+
+#: patterns/template-query-loop-vertical-header-blog.php
+msgctxt "Pattern title"
+msgid "Right-aligned query loop"
+msgstr "حلقه کوئری راست‌چین"
+
+#: patterns/text-faqs.php:35 patterns/text-faqs.php:51
+#: patterns/text-faqs.php:71 patterns/text-faqs.php:87
+msgctxt "Answer in the FAQs pattern."
+msgid "This exquisite compilation showcases a diverse array of photographs that capture the essence of different eras and cultures, reflecting the unique styles and perspectives of each artist."
+msgstr "این مجموعهٔ نفیس شامل طیف گسترده‌ای از عکس‌هایی است که جوهرهٔ دوره‌ها و فرهنگ‌های مختلف را به تصویر می‌کشند و سبک‌ها و دیدگاه‌های منحصربه‌فرد هر هنرمند را بازتاب می‌دهند."
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "سربرگ"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Base"
+msgstr "پایه"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "بزرگ"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr "کنتراست"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "میانه"
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr "۴۰۴"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "بسیار بزرگ"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page No Title"
+msgstr "برگه بدون عنوان"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "پابرگ"
+
+#: patterns/footer-columns.php:37 patterns/footer.php:47
+msgid "About"
+msgstr "درباره"
+
+#: patterns/contact-info-locations.php:34 patterns/footer-social.php:21
+msgid "Facebook"
+msgstr "فیس‌بوک"
+
+#: patterns/contact-info-locations.php:33 patterns/footer-social.php:22
+#: patterns/media-instagram-grid.php:24 patterns/page-cv-bio.php:47
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php:36
+#: patterns/page-link-in-bio-with-tight-margins.php:48
+msgid "Instagram"
+msgstr "اینستاگرام"
+
+#: patterns/comments.php
+msgctxt "Pattern title"
+msgid "Comments"
+msgstr "دیدگاه‌ها"
+
+#: patterns/hidden-search.php
+msgctxt "Pattern title"
+msgid "Search"
+msgstr "جستجو"
+
+#: patterns/comments.php:18
+msgid "Comments"
+msgstr "دیدگاه‌ها"
+
+#: patterns/template-query-loop.php
+msgctxt "Pattern title"
+msgid "List of posts, 1 column"
+msgstr "فهرست نوشته‌ها، ۱ ستون"
+
+#: functions.php:109
+msgid "A collection of full page layouts."
+msgstr "مجموعه‌ای از چیدمان‌های تمام صفحه."
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr "نوار کناری"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "کوچک"
+
+#: theme.json styles/02-noon.json styles/04-afternoon.json
+#: styles/05-twilight.json styles/06-morning.json styles/08-midnight.json
+#: styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-4.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font size name"
+msgid "Extra Extra Large"
+msgstr "خیلی خیلی بزرگ"
+
+#: patterns/hidden-sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr "نوار کناری"
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr "پیمایش نوشته"
+
+#: functions.php:80
+msgid "Checkmark"
+msgstr "علامت تیک"
+
+#: functions.php:108
+msgid "Pages"
+msgstr "برگه‌ها"
+
+#: patterns/banner-intro-image.php:22
+msgctxt "Alt text for intro picture."
+msgid "Picture of a flower"
+msgstr "تصویر یک گل"
+
+#: patterns/banner-poster.php:15
+msgid "Picture of a historical building in ruins."
+msgstr "تصویر یک بنای تاریخی در ویرانه‌ها."
+
+#: patterns/banner-with-description-and-images-grid.php:23
+#: patterns/overlapped-images.php:37
+msgid "About Us"
+msgstr "درباره ما"
+
+#: patterns/contact-info-locations.php:41
+msgid "example@example.com"
+msgstr "example@example.com"
+
+#: patterns/contact-info-locations.php:86
+msgid "Portland"
+msgstr "پورتلند"
+
+#: patterns/contact-info-locations.php:74
+msgid "Salt Lake City"
+msgstr "سالت لیک سیتی"
+
+#: patterns/contact-info-locations.php:38
+msgid "Email"
+msgstr "ایمیل"
+
+#: patterns/contact-info-locations.php:51
+msgid "New York"
+msgstr "نیویورک"
+
+#: patterns/cta-book-locations.php:79
+msgid "Japan"
+msgstr "ژاپن"
+
+#: patterns/cta-book-locations.php:67
+msgid "Canada"
+msgstr "کانادا"
+
+#: patterns/cta-book-locations.php:55
+msgid "Brazil"
+msgstr "برزیل"
+
+#: patterns/cta-book-locations.php:95
+msgid "New Zealand"
+msgstr "نیوزلند"
+
+#: patterns/cta-book-locations.php:107
+msgid "Switzerland"
+msgstr "سوئیس"
+
+#: patterns/cta-book-locations.php:43
+msgid "Australia"
+msgstr "استرالیا"
+
+#: patterns/cta-events-list.php
+msgctxt "Pattern title"
+msgid "Events list"
+msgstr "فهرست رویدادها"
+
+#: patterns/banner-intro-image.php:42 patterns/cta-centered-heading.php:28
+#: patterns/hero-full-width-image.php:33
+msgid "Learn more"
+msgstr "بیشتر بدانید"
+
+#: patterns/cta-newsletter.php:32 patterns/footer-newsletter.php:30
+#: patterns/page-coming-soon.php:39
+#: patterns/services-subscriber-only-section.php:51
+msgid "Subscribe"
+msgstr "اشتراک"
+
+#: patterns/event-3-col.php:20 patterns/footer-columns.php:49
+#: patterns/footer.php:55
+msgid "Events"
+msgstr "رویدادها"
+
+#: patterns/event-3-col.php:34 patterns/event-3-col.php:58
+#: patterns/event-3-col.php:82 patterns/format-audio.php:20
+msgid "Event image"
+msgstr "تصویر رویداد"
+
+#: patterns/event-3-col.php:50 patterns/event-3-col.php:74
+#: patterns/event-3-col.php:98
+msgid "Event details"
+msgstr "جزئیات رویداد"
+
+#: patterns/cta-heading-search.php:21 patterns/hidden-search.php:14
+msgctxt "Search input field placeholder text."
+msgid "Type here..."
+msgstr "اینجا بنویسید…"
+
+#: patterns/cta-heading-search.php:21 patterns/hidden-search.php:14
+msgctxt "Search form label."
+msgid "Search"
+msgstr "جستجو"
+
+#: patterns/footer-columns.php:52 patterns/footer.php:61
+msgid "Themes"
+msgstr "پوسته‌ها"
+
+#: patterns/footer-columns.php:51 patterns/footer.php:59
+msgid "Patterns"
+msgstr "الگوها"
+
+#: patterns/footer-columns.php:38 patterns/footer.php:49
+msgid "FAQs"
+msgstr "سوالات متداول"
+
+#: patterns/footer-columns.php:36 patterns/footer.php:45
+#: patterns/hidden-blog-heading.php:15 patterns/template-home-text-blog.php:20
+msgid "Blog"
+msgstr "بلاگ"
+
+#: patterns/format-link.php:23
+msgid "https://example.com"
+msgstr "https://example.com"
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr "پابرگ"
+
+#: patterns/grid-with-categories.php:64
+msgid "Sunflowers"
+msgstr "آفتابگردان‌ها"
+
+#: patterns/grid-with-categories.php:50
+msgid "Cactus"
+msgstr "کاکتوس"
+
+#: patterns/grid-videos.php:23
+msgid "Podcast"
+msgstr "پادکست"
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr "سربرگ"
+
+#: patterns/cta-heading-search.php:21 patterns/hidden-search.php:14
+msgctxt "Button text. Verb."
+msgid "Search"
+msgstr "جستجو"
+
+#: patterns/hidden-sidebar.php:14
+msgid "Other Posts"
+msgstr "دیگر نوشته‌ها"
+
+#: patterns/hero-podcast.php:57
+msgctxt "Button text"
+msgid "Spotify"
+msgstr "اسپاتیفای"
+
+#: patterns/hidden-written-by.php:16
+msgid "Written by "
+msgstr "نوشته شده توسط "
+
+#: patterns/hidden-written-by.php
+msgctxt "Pattern title"
+msgid "Written by"
+msgstr "نوشته شده توسط"
+
+#: patterns/media-instagram-grid.php:28
+msgctxt "Example username for social media account."
+msgid "@example"
+msgstr "@example"
+
+#: patterns/page-coming-soon.php:24
+msgid "Event"
+msgstr "رویداد"
+
+#: patterns/page-cv-bio.php:47
+msgid "LinkedIn"
+msgstr "لینکدین"
+
+#: patterns/page-portfolio-home.php:229
+msgid "email@example.com"
+msgstr "email@example.com"
+
+#: patterns/page-portfolio-home.php:229
+msgctxt "Phone number."
+msgid "+1 555 349 1806"
+msgstr "+1 555 349 1806"
+
+#: patterns/pricing-2-col.php:34 patterns/pricing-3-col.php:37
+msgid "Free"
+msgstr "رایگان"
+
+#: patterns/template-query-loop-news-blog.php:45
+msgid "Newer Posts"
+msgstr "نوشته‌های تازه‌تر"
+
+#: patterns/template-query-loop-news-blog.php:30
+msgctxt "Prefix before the author name. The post author name is displayed in a separate block."
+msgid "Written by"
+msgstr "نوشته شده توسط"
+
+#: patterns/template-single-offset.php:40
+#: patterns/template-single-photo-blog.php:36
+msgctxt "Prefix before the post date block."
+msgid "Published on"
+msgstr "منتشر شده در"
+
+#: patterns/template-home-with-sidebar-news-blog.php:88
+#: patterns/template-single-left-aligned-content.php:56
+#: patterns/template-single-news-blog.php:39
+msgctxt "Separator between date and categories."
+msgid "·"
+msgstr "·"
+
+#: patterns/template-single-left-aligned-content.php:31
+msgctxt "Prefix before the author name. The post author name is displayed in a separate block."
+msgid "by"
+msgstr "توسط"
+
+#: patterns/text-faqs.php
+msgctxt "Pattern title"
+msgid "FAQs"
+msgstr "سوالات متداول"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "بزرگ"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Regular"
+msgstr "عادی"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "کوچک"
+
+#: patterns/banner-about-book.php:22
+msgid "About the book"
+msgstr "درباره کتاب"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Newsletter"
+msgstr "خبرنامه پابرگ"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Columns"
+msgstr "ستون‌های پابرگ"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header with large title"
+msgstr "سربرگ با عنوان بزرگ"
+
+#: styles/05-twilight.json styles/typography/typography-preset-4.json
+msgctxt "Font family name"
+msgid "Roboto Slab"
+msgstr "Roboto Slab"
+
+#: styles/02-noon.json styles/typography/typography-preset-1.json
+msgctxt "Font family name"
+msgid "Beiruti"
+msgstr "Beiruti"
+
+#: styles/04-afternoon.json styles/07-sunrise.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-6.json
+msgctxt "Font family name"
+msgid "Platypi"
+msgstr "Platypi"
+
+#: styles/04-afternoon.json styles/06-morning.json
+#: styles/typography/typography-preset-3.json
+#: styles/typography/typography-preset-5.json
+msgctxt "Font family name"
+msgid "Ysabeau Office"
+msgstr "Ysabeau Office"
+
+#: styles/08-midnight.json styles/typography/typography-preset-7.json
+msgctxt "Font family name"
+msgid "Fira Sans"
+msgstr "Fira Sans"
+
+#: theme.json styles/03-dusk.json styles/typography/typography-preset-2.json
+msgctxt "Font family name"
+msgid "Fira Code"
+msgstr "Fira Code"
+
+#: styles/03-dusk.json styles/typography/typography-preset-2.json
+msgctxt "Font family name"
+msgid "Vollkorn"
+msgstr "Vollkorn"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XX-Large"
+msgstr "خیلی خیلی بزرگ"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Large"
+msgstr "بسیار بزرگ"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Small"
+msgstr "بسیار کوچک"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Tiny"
+msgstr "ریز"
+
+#: styles/sections/section-5.json
+msgctxt "Style variation name"
+msgid "Style 5"
+msgstr "سبک ۵"
+
+#: styles/sections/section-4.json
+msgctxt "Style variation name"
+msgid "Style 4"
+msgstr "سبک ۴"
+
+#: styles/blocks/01-display.json
+msgctxt "Style variation name"
+msgid "Display"
+msgstr "نمایش"
+
+#: styles/08-midnight.json styles/colors/08-midnight.json
+msgctxt "Duotone name"
+msgid "Midnight filter"
+msgstr "فیلتر نیمه‌شب"
+
+#: styles/08-midnight.json styles/colors/08-midnight.json
+msgctxt "Style variation name"
+msgid "Midnight"
+msgstr "نیمه‌شب"
+
+#: styles/07-sunrise.json styles/colors/07-sunrise.json
+msgctxt "Style variation name"
+msgid "Sunrise"
+msgstr "طلوع"
+
+#: styles/06-morning.json styles/colors/06-morning.json
+msgctxt "Style variation name"
+msgid "Morning"
+msgstr "صبح"
+
+#: styles/05-twilight.json styles/colors/05-twilight.json
+msgctxt "Style variation name"
+msgid "Twilight"
+msgstr "سپیده‌دم"
+
+#: styles/04-afternoon.json styles/colors/04-afternoon.json
+msgctxt "Style variation name"
+msgid "Afternoon"
+msgstr "عصر"
+
+#: styles/03-dusk.json styles/colors/03-dusk.json
+msgctxt "Style variation name"
+msgid "Dusk"
+msgstr "گرگ و میش"
+
+#: styles/02-noon.json styles/colors/02-noon.json
+msgctxt "Style variation name"
+msgid "Noon"
+msgstr "ظهر"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Accent 6"
+msgstr "تاکید ۶"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Accent 5"
+msgstr "تاکید ۵"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Accent 4"
+msgstr "تاکید ۴"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Accent 3"
+msgstr "تاکید ۴"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Accent 2"
+msgstr "تاکید ۲"
+
+#: theme.json styles/01-evening.json styles/02-noon.json styles/03-dusk.json
+#: styles/04-afternoon.json styles/05-twilight.json styles/06-morning.json
+#: styles/07-sunrise.json styles/08-midnight.json styles/colors/01-evening.json
+#: styles/colors/02-noon.json styles/colors/03-dusk.json
+#: styles/colors/04-afternoon.json styles/colors/05-twilight.json
+#: styles/colors/06-morning.json styles/colors/07-sunrise.json
+#: styles/colors/08-midnight.json
+msgctxt "Color name"
+msgid "Accent 1"
+msgstr "تاکید ۱"
+
+#: patterns/testimonials-6-col.php:18
+msgctxt "Testimonial section heading."
+msgid "What people are saying"
+msgstr "مردم چه می گویند"
+
+#: patterns/testimonials-6-col.php
+msgctxt "Pattern description"
+msgid "A section with three columns and two rows, each containing a testimonial and citation."
+msgstr "بخشی با سه ستون و دو ردیف، هرکدام شامل یک گواهی و استناد"
+
+#: patterns/template-single-photo-blog.php:79
+msgid "Next Photo"
+msgstr "تصویر بعدی"
+
+#: patterns/template-single-photo-blog.php:78
+msgid "Previous Photo"
+msgstr "تصویر قبلی"
+
+#: patterns/template-single-photo-blog.php:61
+msgctxt "Prefix before one or more tags. The tags are displayed in a separate block on the next line."
+msgid "Tagged:"
+msgstr "برچسب‌ها:"
+
+#: patterns/testimonials-2-col.php
+msgctxt "Pattern title"
+msgid "2 columns with avatar"
+msgstr "۲ ستون همراه با نیمرخ"
+
+#: styles/sections/section-3.json
+msgctxt "Style variation name"
+msgid "Style 3"
+msgstr "سبک ۳"
+
+#: styles/sections/section-2.json
+msgctxt "Style variation name"
+msgid "Style 2"
+msgstr "سبک ۲"
+
+#: styles/sections/section-1.json
+msgctxt "Style variation name"
+msgid "Style 1"
+msgstr "سبک ۱"
+
+#: styles/blocks/post-terms-1.json
+msgctxt "Style variation name"
+msgid "Pill shaped"
+msgstr "به شکل قرص"
+
+#: styles/blocks/03-annotation.json
+msgctxt "Style variation name"
+msgid "Annotation"
+msgstr "یادداشت"
+
+#: styles/blocks/02-subtitle.json
+msgctxt "Style variation name"
+msgid "Subtitle"
+msgstr "زیرعنوان"
+
+#: patterns/text-faqs.php:21
+msgctxt "Heading of the FAQs pattern."
+msgid "Frequently Asked Questions"
+msgstr "پرسش‌های متداول"
+
+#: patterns/testimonials-large.php:47
+msgctxt "Alt text for testimonial image."
+msgid "Picture of a person typing on a typewriter."
+msgstr "تصویر یک شخص در حال تایپ کردن بر روی یک ماشین‌تحریر"
+
+#: patterns/testimonials-large.php:24
+msgctxt "Testimonial heading."
+msgid "What people are saying"
+msgstr "مردم چه می گویند"
+
+#: patterns/testimonials-large.php
+msgctxt "Pattern description"
+msgid "A testimonial with a large image on the right."
+msgstr "یک گواهی همراه با تصویری بزرگ در سمت راست."
+
+#: patterns/testimonials-large.php
+msgctxt "Pattern title"
+msgid "Review with large image on right"
+msgstr "نقدو بررسی همراه با تصویری بزرگ در سمت راست."
+
+#: patterns/testimonials-6-col.php
+msgctxt "Pattern title"
+msgid "3 column layout with 6 testimonials"
+msgstr "طرح ۳ ستونی با ۶ گواهی"
+
+#: patterns/testimonials-2-col.php:67 patterns/testimonials-6-col.php:34
+#: patterns/testimonials-6-col.php:51 patterns/testimonials-6-col.php:68
+#: patterns/testimonials-6-col.php:89 patterns/testimonials-6-col.php:104
+#: patterns/testimonials-6-col.php:119
+msgctxt "Sample testimonial citation."
+msgid "Otto Reid <br><sub>Springfield, IL</sub>"
+msgstr "آتو رید <br><sub>اسپیرینگ‌فیلد، ایلینوی</sub>"
+
+#: patterns/testimonials-2-col.php:65 patterns/testimonials-6-col.php:30
+#: patterns/testimonials-6-col.php:47 patterns/testimonials-6-col.php:64
+#: patterns/testimonials-6-col.php:85 patterns/testimonials-6-col.php:101
+#: patterns/testimonials-6-col.php:116
+msgctxt "Sample testimonial."
+msgid "“Amazing quality and care. I love all your products.”"
+msgstr "«کیفیت و مراقبت شگفت انگیز. تمامی محصولات شما را دوست دارم»"
+
+#: patterns/template-single-photo-blog.php:42
+msgctxt "Prefix before the author name. The post author name is displayed in a separate block on the next line."
+msgid "Posted by"
+msgstr "ارسال شده توسط"
+
+#: patterns/template-single-photo-blog.php:53
+msgctxt "Prefix before one or more categories. The categories are displayed in a separate block on the next line."
+msgid "Categories:"
+msgstr "دسته‌بندی‌ها:"
+
+#: patterns/testimonials-2-col.php:26 patterns/testimonials-2-col.php:55
+msgctxt "Alt text for testimonial image."
+msgid "Picture of a person"
+msgstr "تصویر یک شخص"
+
+#: patterns/text-faqs.php:31
+msgctxt "Question in the FAQs pattern."
+msgid "What is The Stories Book about?"
+msgstr "کتاب داستان‌ها درباره چیست؟"
+
+#: patterns/template-single-photo-blog.php
+msgctxt "Pattern title"
+msgid "Photo blog single post"
+msgstr "تک نوشته وبلاگ تصاویر"
+
+#: patterns/text-faqs.php:47
+msgctxt "Question in the FAQs pattern."
+msgid "How much does The Stories Book cost?"
+msgstr "قیمت کتاب داستان‌ها چقدر است؟"
+
+#: patterns/page-business-home.php
+msgctxt "Pattern title"
+msgid "Business homepage"
+msgstr "صفحه اصلی کسب‌و‌کار"
+
+#: patterns/banner-about-book.php:34
+msgid "Image of a book"
+msgstr "تصویر یک کتاب"
+
+#: patterns/banner-cover-big-heading.php
+msgctxt "Pattern title"
+msgid "Cover with big heading"
+msgstr "کاور با تیتر بزرگ"
+
+#: patterns/page-coming-soon.php
+msgctxt "Pattern title"
+msgid "Coming soon"
+msgstr "به زودی"
+
+#: patterns/page-coming-soon.php
+msgctxt "Pattern description"
+msgid "A full-width cover banner that can be applied to a page or it can work as a single landing page."
+msgstr "یک بنر کاور تمام‌عرض که می‌تواند به یک برگه اعمال شود یا به عنوان یک برگهٔ فرود مستقل عمل کند."
+
+#: patterns/banner-about-book.php:26
+msgctxt "Pattern placeholder text."
+msgid "This exquisite compilation showcases a diverse array of photographs that capture the essence of different eras and cultures, reflecting the unique styles and perspectives of each artist. Fleckenstein’s evocative imagery, Strand’s groundbreaking modernist approach, and Kōno’s meticulous documentation of Japanese life come together in a harmonious blend that celebrates the art of photography. Each image in “The Stories Book” is accompanied by insightful commentary, providing historical context and revealing the stories behind the photographs. This collection is not only a visual feast but also a tribute to the power of photography to preserve and narrate the multifaceted experiences of humanity."
+msgstr "این مجموعه نفیس طیف وسیعی از عکاس‌ها را به نمایش می‌گذارد که جوهره دوران‌ها و فرهنگ‌های مختلف را به تصویر کشیده و سبک‌ها و دیدگاه‌های منحصر به فرد هر هنرمند را بازتاب می‌دهد. تصاویری تاثیرگذار از فِلِکِن‌اشتاین، رویکرد نوآورانه مدرن از استرند، و مستندسازی دقیق زندگی ژاپنی توسط کونو در یک ترکیب هماهنگ به هم پیوسته‌اند تا هنر عکاسی را تجلیل کند. هر تصویر در \"کتاب داستان‌ها\" با توضیحاتی عمیق همراه است که زمینه تاریخی آن را ارائه کرده و داستان‌های پشت هر عکس را آشکار می‌سازد. این مجموعه نه تنها یک جشن بصری است، بلکه ادای احترامی است به قدرت عکاسی برای حفظ و روایت تجربیات چندوجهی انسان‌ها."
+
+#: patterns/banner-cover-big-heading.php:20
+#: patterns/media-instagram-grid.php:36 patterns/page-coming-soon.php:19
+msgid "Photo of a field full of flowers, a blue sky and a tree."
+msgstr "عکسی از یک میدان پر از گل، آسمان آبی و یک درخت."
+
+#: patterns/banner-cover-big-heading.php:27 patterns/footer-columns.php:33
+#: patterns/footer-columns.php:35 patterns/footer-newsletter.php:20
+#: patterns/template-home-photo-blog.php:22
+msgid "Stories"
+msgstr "داستان‌ها"
+
+#: patterns/page-coming-soon.php:29
+msgid "Something great is coming soon"
+msgstr "چیزی عالی در راه است"
+
+#: patterns/banner-intro-image.php
+msgctxt "Pattern title"
+msgid "Short heading and paragraph and image on the left"
+msgstr "تیتر کوتاه و پاراگراف و تصویر در سمت چپ."
+
+#: patterns/page-coming-soon.php:33
+msgid "Subscribe to get notified when our website is ready."
+msgstr "مشترک شوید تا از آماده شدن وب سایت ما مطلع شوید."
+
+#: patterns/banner-intro-image.php
+msgctxt "Pattern description"
+msgid "A Intro pattern with Short heading, paragraph and image on the left."
+msgstr "یک الگوی مقدمه با تیتر کوتاه، پاراگراف و تصویر در سمت چپ."
+
+#: patterns/page-business-home.php
+msgctxt "Pattern description"
+msgid "A business homepage pattern."
+msgstr "یک الگوی صفحه اصلی کسب‌و‌کار."
+
+#: patterns/banner-cover-big-heading.php
+msgctxt "Pattern description"
+msgid "A full-width cover section with a large background image and an oversized heading."
+msgstr "یک بخش کاور تمام‌عرض با یک تصویر پس‌زمینه بزرگ و یک تیتر بزرگ‌تر."
+
+#: patterns/page-cv-bio.php
+msgctxt "Pattern title"
+msgid "CV/bio"
+msgstr "رزومه/بیوگرافی"
+
+#: patterns/page-cv-bio.php
+msgctxt "Pattern description"
+msgid "A pattern for a CV/Bio landing page."
+msgstr "یک الگوی برگهٔ فرود رزومه/بیوگرافی."
+
+#: patterns/banner-intro-image.php:31
+msgctxt "Heading for banner pattern."
+msgid "New arrivals"
+msgstr "تازه رسیده‌‌ها"
+
+#: patterns/page-cv-bio.php:28
+msgctxt "Example heading in pattern."
+msgid "Hey,"
+msgstr "سلام،"
+
+#: patterns/banner-intro-image.php:35
+msgctxt "Sample description for banner with flower."
+msgid "Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience, revealing hidden wonders."
+msgstr "مانند گل‌هایی که در مکان‌های غیرمنتظره شکوفا می‌شوند، هر داستان با زیبایی و استقامت باز می‌شود و شگفتی‌های پنهان را آشکار می‌سازد."
+
+#: patterns/page-cv-bio.php:43 patterns/page-link-in-bio-wide-margins.php:24
+#: patterns/services-team-photos.php:32
+msgid "Woman on beach, splashing water."
+msgstr "زنی در ساحل، آب می‌پاشد."
+
+#: patterns/page-cv-bio.php:47
+msgctxt "Link to a page with information about what the person is working on right now."
+msgid "Now"
+msgstr "‫اکنون"
+
+#. translators: %s is the brand name, e.g., 'Fleurs'.
+#: patterns/banner-intro.php:21
+msgctxt "Pattern placeholder text."
+msgid "We're %s, our mission is to deliver exquisite flower arrangements that not only adorn living spaces but also inspire a deeper appreciation for natural beauty."
+msgstr "ما %s هستیم، ماموریت ما ارائه گل آرایی‌های نفیس است که نه تنها زینت‌بخش فضاهای زندگی‌اند، بلکه الهام‌بخش قدردانی عمیق‌تری از زیبایی طبیعی نیز هستند."
+
+#: patterns/page-landing-book.php
+msgctxt "Pattern title"
+msgid "Landing page for book"
+msgstr "برگهٔ فرود برای کتاب"
+
+#: patterns/page-cv-bio.php:31
+msgctxt "Pattern placeholder text."
+msgid "My name is Nora Winslow Keene, and I’m a committed public interest attorney. Living in Denver, Colorado, I’ve spent years championing the rights of underrepresented workers. A graduate of Stanford University, I played a key role in securing critical protections for agricultural laborers, ensuring better wages and access to healthcare. My work has focused on advocating for environmental justice and improving the quality of life for rural communities. Every case I take on is driven by the belief that everyone deserves dignity and fair treatment in the workplace."
+msgstr "نام من نورا وینسلو کین است و من یک وکیل متعهد منافع عمومی هستم. من که در دنور، کلرادو زندگی می‌کنم، سال‌هاست که از حقوق کارگرانی که کمتر از آنها نمایندگی می‌شود دفاع کرده‌ام. من که فارغ التحصیل دانشگاه استنفورد بودم، نقشی کلیدی در تامین حمایت‌های حیاتی برای کارگران کشاورزی، تضمین دستمزدهای بهتر و دسترسی به مراقبت‌های بهداشتی ایفا کردم. کار من بر حمایت از عدالت زیست محیطی و بهبود کیفیت زندگی برای جوامع روستایی متمرکز شده است. هر پرونده‌ای که من به عهده می‌گیرم با این باور است که همه مستحق کرامت و رفتار عادلانه در محل کار هستند."
+
+#: patterns/page-landing-book.php
+msgctxt "Pattern description"
+msgid "A landing page for the book with a hero section, pre-order links, locations, FAQs and newsletter signup."
+msgstr "یک برگهٔ فرود برای کتاب با یک بخش اصلی، پیوند‌های پیش‌سفارش، مکان‌ها، سوالات متداول و ثبت‌نام برای خبرنامه."
+
+#: patterns/banner-poster.php
+msgctxt "Pattern title"
+msgid "Poster-like section"
+msgstr "بخش پوستر مانند"
+
+#: patterns/page-landing-event.php
+msgctxt "Pattern title"
+msgid "Landing page for event"
+msgstr "برگهٔ فرود برای رویداد"
+
+#: patterns/banner-poster.php
+msgctxt "Pattern description"
+msgid "A section that can be used as a banner or a landing page to announce an event."
+msgstr "یک بخش که می‌تواند به عنوان بنر یا برگهٔ فرود برای اعلام یک رویداد استفاده شود."
+
+#: patterns/page-landing-event.php
+msgctxt "Pattern description"
+msgid "A landing page for the event with a hero section, description, FAQs and call to action."
+msgstr "یک برگهٔ فرود برای رویداد با یک بخش اصلی، توضیحات، سوالات متداول و دعوت به اقدام."
+
+#: patterns/page-landing-podcast.php
+msgctxt "Pattern title"
+msgid "Landing page for podcast"
+msgstr "برگهٔ فرود برای پادکست"
+
+#. translators: This string contains the word "Stories" in four different
+#. languages with the first item in the locale's language.
+#: patterns/banner-poster.php:28 patterns/cta-events-list.php:68
+#: patterns/cta-events-list.php:137 patterns/event-rsvp.php:30
+msgctxt "Placeholder heading in four languages."
+msgid "“Stories, <span lang=\"es\">historias</span>, <span lang=\"uk\">iсторії</span>, <span lang=\"el\">iστορίες</span>”"
+msgstr "“داستان‌ها, <span lang=\"es\">historias</span>, <span lang=\"uk\">iсторії</span>, <span lang=\"el\">iστορίες</span>”"
+
+#: patterns/page-landing-podcast.php
+msgctxt "Pattern description"
+msgid "A landing page for the podcast with a hero section, description, logos, grid with videos and newsletter signup."
+msgstr "یک برگهٔ فرود برای پادکست با یک بخش اصلی، توضیحات، آرم‌ها، شبکه‌ای از ویدیوها و ثبت‌نام برای خبرنامه."
+
+#: patterns/banner-poster.php:39
+msgctxt "Example event date in pattern."
+msgid "Aug 08—10 2025"
+msgstr "۸ تا ۱۰ اوت ۲۰۲۵"
+
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php
+msgctxt "Pattern title"
+msgid "Link in bio heading, paragraph, links and full-height image"
+msgstr "تیتر پیوند در بیوگرافی، پاراگراف، پیوندها و تصویر با ارتفاع کامل"
+
+#: patterns/banner-poster.php:39
+msgid "Fuego Bar, Mexico City"
+msgstr "بار فوئگو، مکزیکو سیتی"
+
+#: patterns/banner-poster.php:51
+msgid "Let’s hear them."
+msgstr "آن‌ها را بشنویم."
+
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php:26
+msgid "Lewis Hine"
+msgstr "لوئیس هاین"
+
+#: patterns/banner-poster.php:59
+msgid "#stories"
+msgstr "#داستان‌ها"
+
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php:30
+msgid "Lewis W. Hine studied sociology before moving to New York in 1901 to work at the Ethical Culture School, where he took up photography to enhance his teaching practices"
+msgstr "لوئیس دبلیو. هاین قبل از نقل مکان به نیویورک در سال ۱۹۰۱ برای کار در مدرسه فرهنگ اخلاقی، جامعه‌شناسی مطالعه کرده بود، جایی که او عکاسی را برای بهبود شیوه‌های تدریس خود آغاز کرد"
+
+#: patterns/banner-with-description-and-images-grid.php
+msgctxt "Pattern title"
+msgid "Banner with description and images grid"
+msgstr "بنر با توضیحات و شبکه‌ای از تصاویر"
+
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php:57
+msgid "Photo of a woman worker."
+msgstr "عکس یک کارگر زن."
+
+#: patterns/banner-with-description-and-images-grid.php
+msgctxt "Pattern description"
+msgid "A banner with a short paragraph, and two images displayed in a grid layout."
+msgstr "یک بنر با یک پاراگراف کوتاه، و دو تصویر که در طرحی شبکه‌ای نمایش داده شده‌اند."
+
+#: patterns/page-link-in-bio-wide-margins.php
+msgctxt "Pattern title"
+msgid "Link in bio with profile, links and wide margins"
+msgstr "پیوند در بیوگرافی با شناسنامه، پیوندها و فاصله‌های خارجی گسترده"
+
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php
+msgctxt "Pattern description"
+msgid "A link in bio landing page with a heading, paragraph, links and a full height image."
+msgstr "یک برگهٔ فرود پیوند در بیوگرافی با تیتر، پاراگراف، پیوندها و تصویری با ارتفاع کامل."
+
+#: patterns/page-link-in-bio-wide-margins.php
+msgctxt "Pattern description"
+msgid "A link in bio landing page with social links, a profile photo and a brief description."
+msgstr "یک برگهٔ فرود پیوند در بیوگرافی با پیوندهای اجتماعی، عکس شناسنامه و توضیحات مختصر."
+
+#. translators: %s is the brand name, e.g., 'Fleurs'.
+#: patterns/banner-with-description-and-images-grid.php:31
+#: patterns/overlapped-images.php:47
+msgid "%s is a flower delivery and subscription business. Based in the EU, our mission is not only to deliver stunning flower arrangements across but also foster knowledge and enthusiasm on the beautiful gift of nature: flowers."
+msgstr "%s یک کسب‌وکار تحویل و اشتراک گل است. مستقر در اتحادیه اروپا، مأموریت ما تنها ارائه آرایش‌های گل خیره‌کننده در سراسر منطقه نیست، بلکه ترویج دانش و اشتیاق نسبت به هدیه زیبای طبیعت نیز هست: گل‌ها."
+
+#: patterns/page-link-in-bio-wide-margins.php:34
+msgid "Nora Winslow Keene"
+msgstr "نورا وینسلو کین"
+
+#: patterns/banner-with-description-and-images-grid.php:42
+#: patterns/overlapped-images.php:21
+msgid "Photography close up of a red flower."
+msgstr "عکاسی نمای نزدیک از یک گل قرمز."
+
+#: patterns/page-link-in-bio-wide-margins.php:38
+msgctxt "Pattern placeholder text."
+msgid "I’m Nora, a dedicated public interest attorney based in Denver. I’m a graduate of Stanford University."
+msgstr "من نورا هستم، یک وکیل وفادار به منافع عمومی که در دنور مستقر هستم. من فارغ‌التحصیل دانشگاه استنفورد هستم."
+
+#: patterns/banner-with-description-and-images-grid.php:48
+#: patterns/overlapped-images.php:26
+msgid "Black and white photography close up of a flower."
+msgstr "عکاسی سیاه و سفید نمای نزدیک از یک گل."
+
+#: patterns/page-link-in-bio-with-tight-margins.php
+msgctxt "Pattern title"
+msgid "Link in bio with tight margins"
+msgstr "پیوند در بیوگرافی با فاصله‌های خارجی تنگ"
+
+#: patterns/binding-format.php
+msgctxt "Pattern title"
+msgid "Post format name"
+msgstr "نام ساختار نوشته"
+
+#: patterns/page-link-in-bio-with-tight-margins.php
+msgctxt "Pattern description"
+msgid "A full-width, full-height link in bio section with an image, a paragraph and social links."
+msgstr "یک بخش پیوند در بیوگرافی با عرض و ارتفاع کامل شامل یک تصویر، یک پاراگراف و پیوندهای اجتماعی."
+
+#: patterns/binding-format.php
+msgctxt "Pattern description"
+msgid "Prints the name of the post format with the help of the Block Bindings API."
+msgstr "نام ساختار نوشته را به کمک API اتصالات بلوک چاپ می‌کند."
+
+#: patterns/page-link-in-bio-with-tight-margins.php:27
+msgid "Black and white photo focusing on a woman and a child from afar."
+msgstr "عکس سیاه و سفید که از دور بر روی یک زن و یک کودک تمرکز دارد."
+
+#: patterns/page-link-in-bio-with-tight-margins.php:42
+msgid "I’m Asahachi Kōno, a Japanese photographer, a member of Los Angeles’s Japanese Camera Pictorialists of California. Before returning to Japan, I worked as a photo retoucher."
+msgstr "من آساهاچی کونو هستم، یک عکاس ژاپنی و عضو گروه عکاسان تصویری ژاپنی کالیفرنیا در لس آنجلس. قبل از بازگشت به ژاپن، به عنوان ویرایشگر عکس کار می‌کردم."
+
+#: patterns/comments.php
+msgctxt "Pattern description"
+msgid "Comments area with comments list, pagination, and comment form."
+msgstr "ناحیه دیدگاه‌ها با فهرست دیدگاه‌ها، صفحه‌بندی و فرم دیدگاه."
+
+#: patterns/page-portfolio-home.php
+msgctxt "Pattern title"
+msgid "Portfolio homepage"
+msgstr "صفحه اصلی نمونه‌کارها"
+
+#: patterns/page-portfolio-home.php
+msgctxt "Pattern description"
+msgid "A portfolio homepage pattern."
+msgstr "یک الگوی صفحه اصلی نمونه‌کارها."
+
+#: patterns/page-portfolio-home.php:27
+msgid "My name is Anna Möller and these are some of my photo projects."
+msgstr "نام من آنا مولر است و این‌ها برخی از پروژه‌های عکاسی من هستند."
+
+#: patterns/contact-centered-social-link.php
+msgctxt "Pattern description"
+msgid "Centered contact section with a prominent message and social media links."
+msgstr "بخش تماس وسط‌چین با یک پیام برجسته و پیوند شبکه‌های اجتماعی."
+
+#: patterns/contact-centered-social-link.php:21
+msgctxt "Heading of the Contact social link pattern"
+msgid "Got questions? <br><a href=\"#\" rel=\"nofollow\">Feel free to reach out.</a>"
+msgstr "سوالاتی دارید؟ <br><a href=\"#\" rel=\"nofollow\">با خیال راحت تماس بگیرید.</a>"
+
+#: patterns/contact-info-locations.php
+msgctxt "Pattern title"
+msgid "Contact, info and locations"
+msgstr "تماس، اطلاعات و مکان‌ها"
+
+#: patterns/page-shop-home.php
+msgctxt "Pattern title"
+msgid "Shop homepage"
+msgstr "صفحه اصلی فروشگاه"
+
+#: patterns/contact-info-locations.php:32 patterns/footer-social.php:23
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php:40
+#: patterns/page-link-in-bio-with-tight-margins.php:52
+msgctxt "Refers to the social media platform formerly known as Twitter."
+msgid "X"
+msgstr "ایکس"
+
+#: patterns/hero-podcast.php:65
+msgctxt "Button text"
+msgid "RSS"
+msgstr "RSS"
+
+#: patterns/pricing-2-col.php:38 patterns/pricing-3-col.php:49
+msgid "0€"
+msgstr "0€"
+
+#: patterns/pricing-2-col.php:68 patterns/pricing-2-col.php:112
+#: patterns/pricing-3-col.php:59 patterns/pricing-3-col.php:99
+#: patterns/pricing-3-col.php:139
+msgctxt "Button text, refers to joining a community. Verb."
+msgid "Join"
+msgstr "پیوستن"
+
+#: patterns/footer-columns.php:50 patterns/footer.php:57
+msgid "Shop"
+msgstr "فروشگاه"
+
+#: patterns/pricing-3-col.php:85
+msgid "20€"
+msgstr "20€"
+
+#: patterns/pricing-3-col.php:89 patterns/pricing-3-col.php:129
+msgid "Month"
+msgstr "ماهانه"
+
+#: patterns/pricing-3-col.php:125
+msgid "40€"
+msgstr "40€"
+
+#: patterns/cta-grid-products-link.php:59
+msgid "30€"
+msgstr "30€"
+
+#: patterns/logos.php
+msgctxt "Pattern title"
+msgid "Logos"
+msgstr "آرم‌ها"
+
+#: patterns/contact-info-locations.php:35
+#: patterns/page-link-in-bio-heading-paragraph-links-image.php:44
+#: patterns/page-link-in-bio-with-tight-margins.php:56
+msgid "TikTok"
+msgstr "تیک‌تاک"
+
+#: patterns/pricing-2-col.php:78 patterns/pricing-3-col.php:73
+msgctxt "Name of membership package."
+msgid "Single"
+msgstr "شخصی"
+
+#: patterns/pricing-3-col.php:113
+msgctxt "Name of membership package."
+msgid "Expert"
+msgstr "تخصصی"
+
+#: patterns/event-schedule.php:20
+msgid "Agenda"
+msgstr "دستور جلسه"
+
+#: patterns/pricing-2-col.php:18 patterns/pricing-3-col.php:23
+msgid "Pricing"
+msgstr "قیمت‌گذاری"
+
+#: patterns/services-3-col.php:32
+msgid "Collect"
+msgstr "گردآوری"
+
+#: patterns/services-3-col.php:68
+msgid "Deliver"
+msgstr "تحویل"
+
+#: patterns/footer-columns.php:39 patterns/footer.php:51
+msgid "Authors"
+msgstr "نویسندگان"
+
+#: styles/01-evening.json styles/colors/01-evening.json
+msgctxt "Style variation name"
+msgid "Evening"
+msgstr "عصر"
+
+#: patterns/services-3-col.php:50
+msgid "Assemble"
+msgstr "هم‌گذاری"
+
+#: patterns/cta-grid-products-link.php:134
+msgid "Shop now"
+msgstr "هم‌اکنون خرید کنید"
+
+#: patterns/footer-columns.php:48
+msgid "Featured"
+msgstr "ویژه"
+
+#: patterns/contact-info-locations.php:62
+msgid "San Diego"
+msgstr "سن دیگو"
+
+#: patterns/hero-book.php
+msgctxt "Pattern title"
+msgid "Hero book"
+msgstr "هیرو کتاب"
+
+#: patterns/cta-book-locations.php:47 patterns/cta-book-locations.php:59
+#: patterns/cta-book-locations.php:71 patterns/cta-book-locations.php:83
+#: patterns/cta-book-locations.php:99 patterns/cta-book-locations.php:111
+#: patterns/cta-book-locations.php:123 patterns/cta-book-locations.php:135
+msgid "Book Store"
+msgstr "کتابفروشی"
+
+#: patterns/services-subscriber-only-section.php:55
+msgid "View plans"
+msgstr "مشاهده طرح‌ها"
+
+#: patterns/cta-events-list.php:45 patterns/cta-events-list.php:83
+#: patterns/cta-events-list.php:114 patterns/cta-events-list.php:152
+#: patterns/event-3-col.php:44 patterns/event-3-col.php:68
+#: patterns/event-3-col.php:92 patterns/event-rsvp.php:37
+#: patterns/event-schedule.php:35 patterns/event-schedule.php:121
+msgctxt "Example event date in pattern."
+msgid "Mon, Jan 1"
+msgstr "دوشنبه، ۱ ژانویه"
+
+#: patterns/template-home-with-sidebar-news-blog.php:42
+msgid "The Latest"
+msgstr "آخرین خبرها"
+
+#: patterns/event-rsvp.php
+msgctxt "Pattern title"
+msgid "Event RSVP"
+msgstr "پاسخ به دعوت‌نامه رویداد"
+
+#: patterns/event-rsvp.php:81
+msgctxt "Abbreviation for \"Please respond\"."
+msgid "RSVP"
+msgstr "لطفا پاسخ دهید"
+
+#: patterns/grid-with-categories.php:36
+msgid "Anthuriums"
+msgstr "آنتوریوم‌ها"
+
+#: patterns/hero-overlapped-book-cover-with-links.php:113
+msgid "Book Image"
+msgstr "تصویر کتاب"
+
+#: patterns/more-posts.php
+msgctxt "Pattern title"
+msgid "More posts"
+msgstr "نوشته‌های بیشتر"
+
+#: patterns/more-posts.php:18
+msgid "More posts"
+msgstr "نوشته‌های بیشتر"
+
+#: patterns/pricing-2-col.php:82
+msgid "20€/month"
+msgstr "20€/ماهانه"
+
+#: patterns/cta-events-list.php:51 patterns/cta-events-list.php:89
+#: patterns/cta-events-list.php:120 patterns/cta-events-list.php:158
+msgid "Buy Tickets"
+msgstr "خرید بلیط"
+
+#: patterns/template-query-loop-news-blog.php:49
+msgid "Older Posts"
+msgstr "نوشته‌های کهنه‌تر"
+
+#: patterns/format-link.php
+msgctxt "Pattern title"
+msgid "Link format"
+msgstr "ساختار پیوند"
+
+#: patterns/contact-info-locations.php:29
+#: patterns/contact-info-locations.php:31 patterns/footer-social.php:20
+msgid "Social media"
+msgstr "رسانهٔ اجتماعی"
+
+#: patterns/cta-book-links.php:39
+msgctxt "Example brand name."
+msgid "Bookshop.org"
+msgstr "Bookshop.org"
+
+#: patterns/services-3-col.php:17
+msgid "Our services"
+msgstr "خدمات ما"
+
+#: patterns/template-home-posts-grid-news-blog.php:114
+msgid "Architecture"
+msgstr "معماری"
+
+#: patterns/format-audio.php
+msgctxt "Pattern title"
+msgid "Audio format"
+msgstr "ساختار صدا"
+
+#: patterns/hero-podcast.php
+msgctxt "Pattern title"
+msgid "Hero podcast"
+msgstr "هیرو پادکست"
+
+#: patterns/hero-podcast.php:61
+msgctxt "Button text"
+msgid "Pocket Casts"
+msgstr "Pocket Casts"
+
+#: patterns/cta-book-locations.php:119
+msgid "United States"
+msgstr "ایالات متحده"
+
+#: patterns/cta-grid-products-link.php:84
+msgid "Free shipping"
+msgstr "ارسال رایگان"
+
+#: patterns/event-rsvp.php:57
+msgid "Free Workshop"
+msgstr "کارگاه رایگان"
+
+#: patterns/contact-location-and-link.php:26
+msgid "Get directions"
+msgstr "دریافت مسیرها"
+
+#: patterns/cta-book-locations.php:131
+msgid "United Kingdom"
+msgstr "انگلستان"
+
+#: patterns/template-home-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog home"
+msgstr "خانهٔ بلاگ اخبار"
+
+#: patterns/cta-grid-products-link.php:114
+msgid "Botany flowers"
+msgstr "گیاه‌شناسی گل‌ها"
+
+#: patterns/event-schedule.php
+msgctxt "Pattern title"
+msgid "Event schedule"
+msgstr "زمان‌بندی رویداد"
+
+#: patterns/event-schedule.php:60 patterns/event-schedule.php:92
+#: patterns/event-schedule.php:145 patterns/event-schedule.php:177
+msgctxt "Example event time in pattern."
+msgid "9 AM — 11 AM"
+msgstr "۹ ق.ظ — ۱۱ ق.ظ"
+
+#: patterns/grid-with-categories.php:22
+msgid "Top Categories"
+msgstr "دسته‌های برتر"
+
+#: patterns/hero-podcast.php:53
+msgctxt "Button text"
+msgid "Apple Podcasts"
+msgstr "پادکست‌های اپل"
+
+#: patterns/hidden-404.php:32
+msgctxt "404 error message"
+msgid "Page not found"
+msgstr "برگه پیدا نشد"
+
+#: patterns/media-instagram-grid.php
+msgctxt "Pattern title"
+msgid "Instagram grid"
+msgstr "شبکه اینستاگرام"
+
+#: patterns/post-navigation.php:17 patterns/post-navigation.php:18
+#: patterns/template-single-left-aligned-content.php:78
+#: patterns/template-single-left-aligned-content.php:79
+#: patterns/template-single-news-blog.php:95
+#: patterns/template-single-news-blog.php:96
+#: patterns/template-single-offset.php:61
+#: patterns/template-single-offset.php:62
+#: patterns/template-single-photo-blog.php:76
+#: patterns/template-single-photo-blog.php:77
+#: patterns/template-single-text-blog.php:36
+#: patterns/template-single-text-blog.php:37
+#: patterns/template-single-vertical-header-blog.php:82
+#: patterns/template-single-vertical-header-blog.php:83
+msgid "Post navigation"
+msgstr "راهبری نوشته‌ها"
+
+#: patterns/cta-centered-heading.php:19 patterns/cta-events-list.php:33
+#: patterns/cta-events-list.php:102 patterns/event-3-col.php:40
+#: patterns/event-3-col.php:64 patterns/event-3-col.php:88
+#: patterns/template-home-photo-blog.php:27
+msgid "Tell your story"
+msgstr "داستان خود را بگویید"
+
+#: patterns/cta-events-list.php:19
+msgid "Upcoming events"
+msgstr "رویدادهای پیش رو"
+
+#: patterns/template-home-photo-blog.php
+msgctxt "Pattern title"
+msgid "Photo blog home"
+msgstr "خانهٔ بلاگ عکس"
+
+#: patterns/template-page-photo-blog.php
+msgctxt "Pattern title"
+msgid "Photo blog page"
+msgstr "برگهٔ بلاگ عکس"
+
+#: patterns/footer-centered.php
+msgctxt "Pattern title"
+msgid "Centered footer"
+msgstr "پابرگ وسط‌چین"
+
+#: patterns/heading-and-paragraph-with-image.php:23
+msgid "About the event"
+msgstr "درباره رویداد"
+
+#: patterns/hero-full-width-image.php:23
+msgctxt "Sample hero heading"
+msgid "Tell your story"
+msgstr "داستان خود را بگویید"
+
+#: patterns/pricing-2-col.php:60 patterns/pricing-2-col.php:104
+#: patterns/services-subscriber-only-section.php:43
+msgid "Join our forums."
+msgstr "به انجمن‌های ما بپیوندید."
+
+#: patterns/cta-events-list.php:37
+msgid "Atlanta, GA, USA"
+msgstr "آتلانتا، جورجیا، ایالات متحده آمریکا"
+
+#: patterns/template-query-loop-photo-blog.php
+msgctxt "Pattern title"
+msgid "Photo blog posts"
+msgstr "نوشته‌های بلاگ عکس"
+
+#: patterns/event-schedule.php:46 patterns/media-instagram-grid.php:60
+msgid "Birds on a lake."
+msgstr "پرندگان روی دریاچه."
+
+#. translators: Designed with WordPress. %s: WordPress link.
+#: patterns/footer-centered.php:33 patterns/footer-columns.php:73
+#: patterns/footer-newsletter.php:49 patterns/footer-social.php:35
+#: patterns/footer.php:82
+msgid "Designed with %s"
+msgstr "طراحی شده با %s"
+
+#: patterns/grid-videos.php
+msgctxt "Pattern title"
+msgid "Grid with videos"
+msgstr "شبکه‌ای از ویدیوها"
+
+#: patterns/hero-book.php:38
+msgctxt "Heading of the hero section."
+msgid "The Stories Book"
+msgstr "کتاب داستان‌ها"
+
+#: patterns/hero-overlapped-book-cover-with-links.php:28
+msgctxt "Hero - Overlapped book cover pattern headline text"
+msgid "The Stories Book"
+msgstr "کتاب داستان‌ها"
+
+#: functions.php:136
+msgctxt "Label for the block binding placeholder in the editor"
+msgid "Post format name"
+msgstr "نام ساختار نوشته"
+
+#: patterns/services-3-col.php:27 patterns/services-3-col.php:45
+#: patterns/services-3-col.php:63
+msgid "Image for service"
+msgstr "تصویر برای خدمت"
+
+#: patterns/template-archive-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog archive"
+msgstr "بایگانی بلاگ اخبار"
+
+#: patterns/cta-grid-products-link.php:20
+msgid "Our online store."
+msgstr "فروشگاه آنلاین ما."
+
+#: patterns/hero-book.php:24
+msgid "Image of the book"
+msgstr "تصویر کتاب"
+
+#: patterns/pricing-2-col.php
+msgctxt "Pattern title"
+msgid "Pricing, 2 columns"
+msgstr "قیمت‌گذاری، ۲ ستونه"
+
+#: patterns/pricing-3-col.php
+msgctxt "Pattern title"
+msgid "Pricing, 3 columns"
+msgstr "قیمت‌گذاری، ۳ ستونه"
+
+#: patterns/cta-book-links.php:31
+#: patterns/hero-overlapped-book-cover-with-links.php:84
+msgctxt "Example brand name."
+msgid "Barnes &amp; Noble"
+msgstr "Barnes &amp; Noble"
+
+#: patterns/template-archive-photo-blog.php
+msgctxt "Pattern title"
+msgid "Photo blog archive"
+msgstr "بایگانی بلاگ عکس"
+
+#: patterns/cta-newsletter.php
+msgctxt "Pattern title"
+msgid "Newsletter sign-up"
+msgstr "ثبت‌نام در خبرنامه"
+
+#: patterns/services-3-col.php
+msgctxt "Pattern title"
+msgid "Services, 3 columns"
+msgstr "خدمات، ۳ ستونه"
+
+#: patterns/services-team-photos.php:38
+msgid "Portrait of a nurse"
+msgstr "پرتره‌ای از یک پرستار"
+
+#: patterns/cta-events-list.php:75
+msgid "Mexico City, Mexico"
+msgstr "مکزیکو سیتی، مکزیک"
+
+#: patterns/cta-events-list.php:106 patterns/cta-events-list.php:144
+msgid "Thornville, OH, USA"
+msgstr "تورنیویل، اوهایو، ایالات متحده آمریکا"
+
+#. translators: %s: Starting price, split into three rows using HTML <br> tags.
+#. The price value has a font size set.
+#: patterns/cta-grid-products-link.php:58
+msgid "Starting at%s/month"
+msgstr "شروع از %s/ماهانه"
+
+#: patterns/footer-columns.php
+msgctxt "Pattern title"
+msgid "Footer with columns"
+msgstr "پابرگ با ستون‌ها"
+
+#: patterns/grid-videos.php
+msgctxt "Pattern description"
+msgid "A grid with videos."
+msgstr "یک شبکه از ویدیوها."
+
+#: patterns/header-columns.php
+msgctxt "Pattern title"
+msgid "Header with columns"
+msgstr "سربرگ با ستون‌ها"
+
+#: patterns/hero-full-width-image.php:18
+msgctxt "Alt text for cover image."
+msgid "Picture of a flower"
+msgstr "تصویر یک گل"
+
+#: patterns/hero-podcast.php:22
+msgctxt "Alt text for hero image."
+msgid "Picture of a person"
+msgstr "تصویر یک شخص"
+
+#: patterns/hero-podcast.php:32
+msgid "The Stories Podcast"
+msgstr "پادکست داستان‌ها"
+
+#: patterns/hidden-blog-heading.php
+msgctxt "Pattern title"
+msgid "Hidden blog heading"
+msgstr "عنوان بلاگ مخفی"
+
+#: patterns/pricing-2-col.php:48 patterns/pricing-2-col.php:92
+#: patterns/services-subscriber-only-section.php:31
+msgid "Join our IRL events."
+msgstr "به رویدادهای حضوری ما بپیوندید."
+
+#: patterns/pricing-2-col.php:52 patterns/pricing-2-col.php:96
+#: patterns/services-subscriber-only-section.php:35
+msgid "Get a free tote bag."
+msgstr "یک کیف دستی رایگان دریافت کنید."
+
+#: patterns/cta-book-links.php:51
+msgctxt "Example brand name."
+msgid "Simon &amp; Schuster"
+msgstr "Simon &amp; Schuster"
+
+#: patterns/template-query-loop-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog query loop"
+msgstr "حلقه کوئری بلاگ اخبار"
+
+#: patterns/grid-videos.php:19
+msgid "Explore the episodes"
+msgstr "اپیزودها را کاوش کنید"
+
+#: patterns/grid-with-categories.php
+msgctxt "Pattern title"
+msgid "Grid with categories"
+msgstr "شبکه‌ای از دسته‌بندی‌ها"
+
+#: patterns/contact-location-and-link.php:36
+msgid "The business location"
+msgstr "مکان کسب‌وکار"
+
+#: patterns/services-team-photos.php
+msgctxt "Pattern title"
+msgid "Services, team photos"
+msgstr "خدمات، عکس‌های تیم"
+
+#: patterns/pricing-3-col.php:19
+msgid "Choose your membership"
+msgstr "عضویت خود را انتخاب کنید"
+
+#: patterns/cta-book-locations.php:23
+msgid "International editions"
+msgstr "نسخه‌های بین‌المللی"
+
+#: patterns/template-home-with-sidebar-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog with sidebar"
+msgstr "بلاگ خبری با نوار کناری"
+
+#: patterns/cta-grid-products-link.php:26
+#: patterns/cta-grid-products-link.php:126
+msgid "Black and white flower"
+msgstr "گل سیاه و سفید"
+
+#: patterns/cta-grid-products-link.php:76
+msgid "Tailored to your needs"
+msgstr "متناسب با نیازهای شما"
+
+#: patterns/heading-and-paragraph-with-image.php:36
+msgctxt "Alt text for Overview picture."
+msgid "Cliff Palace, Colorado"
+msgstr "کاخ کلیف، کلرادو"
+
+#: patterns/hero-full-width-image.php
+msgctxt "Pattern title"
+msgid "Hero, full width image"
+msgstr "هیرو، تصویر تمام عرض"
+
+#: patterns/cta-heading-search.php
+msgctxt "Pattern title"
+msgid "Heading and search form"
+msgstr "تیتر و فرم جستجو"
+
+#: patterns/event-schedule.php:78 patterns/media-instagram-grid.php:44
+msgid "View of the deep ocean."
+msgstr "نمایی از اقیانوس عمیق."
+
+#: patterns/header-large-title.php
+msgctxt "Pattern title"
+msgid "Header with large title"
+msgstr "سربرگ با عنوان بزرگ"
+
+#: patterns/page-shop-home.php
+msgctxt "Pattern description"
+msgid "A shop homepage pattern."
+msgstr "الگوی صفحه اصلی فروشگاه."
+
+#: patterns/pricing-2-col.php:22
+#: patterns/services-subscriber-only-section.php:61
+msgid "Cancel or pause anytime."
+msgstr "هر زمان که بخواهید لغو یا متوقف کنید."
+
+#: patterns/template-search-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog search results"
+msgstr "نتایج جستجوی بلاگ اخبار"
+
+#: patterns/cta-book-links.php:47
+msgctxt "Example brand name."
+msgid "BAM!"
+msgstr "BAM!"
+
+#: patterns/hidden-written-by.php:20
+msgid "in"
+msgstr "در"
+
+#: patterns/contact-location-and-link.php
+msgctxt "Pattern title"
+msgid "Contact location and link"
+msgstr "مکان و پیوند تماس"
+
+#: patterns/cta-heading-search.php:18
+msgid "What are you looking for?"
+msgstr "در جستجوی چه هستید؟"
+
+#: patterns/template-search-photo-blog.php
+msgctxt "Pattern title"
+msgid "Photo blog search results"
+msgstr "نتایج جستجوی بلاگ عکس"
+
+#: patterns/template-single-vertical-header-blog.php
+msgctxt "Pattern title"
+msgid "Right-aligned single post"
+msgstr "تک نوشته راست‌چین"
+
+#: styles/typography/typography-preset-5.json
+msgctxt "Style variation name"
+msgid "Literata & Ysabeau Office"
+msgstr "Literata و Ysabeau Office"
+
+#: styles/typography/typography-preset-3.json
+msgctxt "Style variation name"
+msgid "Platypi & Ysabeau Office"
+msgstr "Platypi و Ysabeau Office"
+
+#: styles/typography/typography-preset-4.json
+msgctxt "Style variation name"
+msgid "Roboto Slab & Manrope"
+msgstr "Roboto Slab و Manrope"
+
+#: styles/typography/typography-preset-7.json
+msgctxt "Style variation name"
+msgid "Literata & Fira Sans"
+msgstr "Literata و Fira Sans"
+
+#: styles/typography/typography-preset-2.json
+msgctxt "Style variation name"
+msgid "Vollkorn & Fira Code"
+msgstr "Vollkorn و Fira Code"
+
+#: styles/typography/typography-preset-6.json
+msgctxt "Style variation name"
+msgid "Platypi & Literata"
+msgstr "Platypi و Literata"
+
+#: styles/typography/typography-preset-1.json
+msgctxt "Style variation name"
+msgid "Beiruti & Literata"
+msgstr "Beiruti و Literata"
+
+#: patterns/template-search-vertical-header-blog.php
+msgctxt "Pattern title"
+msgid "Right-aligned blog, search"
+msgstr "بلاگ راست‌چین، جستجو"
+
+#: patterns/contact-info-locations.php:21
+msgid "How to get in touch with us"
+msgstr "چگونه با ما در تماس باشید"
+
+#: patterns/cta-newsletter.php:19
+msgid "Sign up to get daily stories"
+msgstr "برای دریافت داستان‌های روزانه ثبت‌نام کنید"
+
+#: patterns/text-faqs.php:83
+msgctxt "Question in the FAQs pattern."
+msgid "Are signed copies available?"
+msgstr "آیا نسخه‌های امضا شده در دسترس است؟"
+
+#: patterns/grid-with-categories.php:29
+msgid "Close up of a red anthurium."
+msgstr "نمای نزدیک از یک آنتوریوم قرمز."
+
+#: patterns/hero-book.php:46
+msgctxt "CTA text of the hero section."
+msgid "Available for pre-order now."
+msgstr "هم‌اکنون برای پیش‌سفارش در دسترس است."
+
+#: patterns/banner-about-book.php
+msgctxt "Pattern title"
+msgid "Banner with book description"
+msgstr "بنر با توضیحات کتاب"
+
+#: patterns/post-navigation.php
+msgctxt "Pattern description"
+msgid "Next and previous post links."
+msgstr "پیوندهای نوشته بعدی و قبلی."
+
+#: patterns/cta-book-locations.php
+msgctxt "Pattern title"
+msgid "Call to action with locations"
+msgstr "دعوت به اقدام با مکان‌ها"
+
+#: patterns/event-schedule.php:142
+msgid "Ancient buildings and symbols"
+msgstr "ساختمان‌ها و نمادهای باستانی"
+
+#: patterns/footer-newsletter.php
+msgctxt "Pattern title"
+msgid "Footer with newsletter signup"
+msgstr "پابرگ با ثبت نام در خبرنامه"
+
+#: patterns/cta-book-links.php
+msgctxt "Pattern title"
+msgid "Call to action with book links"
+msgstr "دعوت به اقدام با پیوندهای کتاب"
+
+#: patterns/template-single-left-aligned-content.php
+msgctxt "Pattern title"
+msgid "Post with left-aligned content"
+msgstr "نوشته با محتوای چپ‌چین"
+
+#: patterns/cta-grid-products-link.php:70
+msgid "Flora of Akaka Falls State Park"
+msgstr "فلور پارک ایالتی آبشار آکاکا"
+
+#: patterns/cta-book-links.php:17
+msgid "Buy your copy of The Stories Book"
+msgstr "نسخه خود را از کتاب داستان‌ها خریداری کنید"
+
+#: patterns/services-subscriber-only-section.php
+msgctxt "Pattern title"
+msgid "Services, subscriber only section"
+msgstr "خدمات، بخش مخصوص مشترکین"
+
+#: patterns/services-subscriber-only-section.php:21
+msgid "Subscribe to get unlimited access"
+msgstr "برای دسترسی نامحدود مشترک شوید"
+
+#: patterns/footer-social.php
+msgctxt "Pattern title"
+msgid "Centered footer with social links"
+msgstr "فوتر وسط‌چین با پیوندهای اجتماعی"
+
+#: patterns/template-single-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog single post with sidebar"
+msgstr "تک نوشته بلاگ اخبار با نوار کناری"
+
+#: patterns/template-single-offset.php
+msgctxt "Pattern title"
+msgid "Offset post without featured image"
+msgstr "نوشته جابه‌جا شده بدون تصویر شاخص"
+
+#: patterns/event-schedule.php:174
+msgid "An introduction to African dialects"
+msgstr "مقدمه‌ای بر گویش‌های آفریقایی"
+
+#: patterns/footer-newsletter.php:24
+msgid "Receive our articles in your inbox."
+msgstr "مقالات ما را در صندوق ایمیل خود دریافت کنید."
+
+#: patterns/hero-podcast.php:43
+msgid "Subscribe on your favorite platform"
+msgstr "در پلتفرم مورد علاقه‌تان مشترک شوید."
+
+#: patterns/logos.php:17
+msgid "The Stories Podcast is sponsored by"
+msgstr "پادکست داستان‌ها با حمایت مالی از طرف"
+
+#: patterns/media-instagram-grid.php:40
+msgid "Profile portrait of a native person."
+msgstr "تک‌چهره شناسنامه یک فرد بومی."
+
+#: patterns/cta-events-list.php
+msgctxt "Pattern description"
+msgid "A list of events with call to action."
+msgstr "یک فهرست از رویدادها با دعوت به اقدام."
+
+#: patterns/cta-events-list.php:23
+msgid "These are some of the upcoming events"
+msgstr "این‌ها برخی از رویدادهای آینده هستند"
+
+#: functions.php:117
+msgid "A collection of post format patterns."
+msgstr "مجموعه‌ای از الگوهای ساختار نوشته."
+
+#: patterns/event-3-col.php:24 patterns/event-schedule.php:23
+msgid "These are some of the upcoming events."
+msgstr "این‌ها برخی از رویدادهای آینده هستند."
+
+#: patterns/text-faqs.php:67
+msgctxt "Question in the FAQs pattern."
+msgid "When will The Stories Book be released?"
+msgstr "کتاب داستان‌ها چه زمانی منتشر خواهد شد؟"
+
+#: patterns/testimonials-2-col.php:38 patterns/testimonials-large.php:36
+msgctxt "Sample testimonial citation."
+msgid "Jo Mulligan <br /><sub>Atlanta, GA</sub>"
+msgstr "جو ماللیگان <br /><sub>آتلانتا، جورجیا</sub>"
+
+#: patterns/grid-with-categories.php
+msgctxt "Pattern description"
+msgid "A grid section with different categories."
+msgstr "یک بخش شبکه‌ای با دسته‌بندی‌های متفاوت."
+
+#: patterns/overlapped-images.php
+msgctxt "Pattern title"
+msgid "Overlapping images and paragraph on right"
+msgstr "همپوشانی تصاویر و پاراگراف در سمت راست"
+
+#: patterns/hero-overlapped-book-cover-with-links.php
+msgctxt "Pattern title"
+msgid "Hero, overlapped book cover with links"
+msgstr "هیرو، روی جلد کتاب همپوشانی شده  با پیوندها"
+
+#: patterns/cta-grid-products-link.php
+msgctxt "Pattern description"
+msgid "A call to action featuring product images."
+msgstr "یک دعوت به اقدام با تصاویر محصول."
+
+#: patterns/testimonials-2-col.php
+msgctxt "Pattern description"
+msgid "Two columns with testimonials and avatars."
+msgstr "دو ستون با توصیه‌نامه‌ها و نیم‌رخ‌ها."
+
+#: patterns/testimonials-2-col.php:36 patterns/testimonials-large.php:32
+msgctxt "Sample testimonial."
+msgid "“Superb product and customer service!”"
+msgstr "\"محصول و خدمات مشتری عالی!\""
+
+#: patterns/services-team-photos.php:44
+msgid "Picture of a person typing on a typewriter."
+msgstr "تصویر شخصی در حال تایپ بر روی ماشین تحریر."
+
+#: patterns/hidden-404.php:21
+msgctxt "image description"
+msgid "Small totara tree on ridge above Long Point"
+msgstr "درخت توتارای کوچک بر روی لبهٔ بالای لانگ پوینت"
+
+#: patterns/services-team-photos.php:50
+msgid "Man in hat, standing in front of a building."
+msgstr "مردی با کلاه، در مقابل یک ساختمان ایستاده است."
+
+#: patterns/footer-centered.php
+msgctxt "Pattern description"
+msgid "Footer with centered site title and tagline."
+msgstr "پابرگ با عنوان سایت و معرفی کوتاه وسط‌چین."
+
+#: patterns/pricing-2-col.php:56 patterns/pricing-2-col.php:100
+#: patterns/services-subscriber-only-section.php:39
+msgid "An elegant addition of home decor collection."
+msgstr "یک افزودنی زیبا از مجموعه دکوراسیون منزل."
+
+#: patterns/footer-columns.php
+msgctxt "Pattern description"
+msgid "Footer columns with title, tagline and links."
+msgstr "ستون‌های پابرگ با عنوان، معرفی کوتاه و پیوندها."
+
+#: patterns/heading-and-paragraph-with-image.php
+msgctxt "Pattern title"
+msgid "Heading and paragraph with image on the right"
+msgstr "تیتر و پاراگراف با تصویر در سمت راست"
+
+#: patterns/event-schedule.php:89
+msgid "Things you didn’t know about the deep ocean"
+msgstr "چیزهایی که درباره اعماق اقیانوس نمی‌دانستید"
+
+#: patterns/media-instagram-grid.php:56
+msgid "Close up of two flowers on a dark background."
+msgstr "نمای نزدیک از دو گل بر روی پس‌زمینه تیره."
+
+#: patterns/more-posts.php
+msgctxt "Pattern description"
+msgid "Displays a list of posts with title and date."
+msgstr "فهرستی از نوشته‌ها را با عنوان و تاریخ نمایش می‌دهد."
+
+#: patterns/event-3-col.php
+msgctxt "Pattern title"
+msgid "Events, 3 columns with event images and titles"
+msgstr "رویدادها، ۳ ستون با تصاویر و عناوین رویدادها"
+
+#: patterns/cta-grid-products-link.php:38
+msgid "Closeup of plantlife in the Malibu Canyon area"
+msgstr "نمای نزدیک از حیات گیاهی در منطقه دره مالیبو"
+
+#: patterns/event-schedule.php:65 patterns/event-schedule.php:97
+#: patterns/event-schedule.php:150 patterns/event-schedule.php:182
+msgctxt "Pattern placeholder text with link."
+msgid "Lecture by <a href=\"#\">Prof. Fiona Presley</a>"
+msgstr "سخنرانی توسط <a href=\"#\">پروفسور فیونا پرسلی</a>"
+
+#: patterns/hero-overlapped-book-cover-with-links.php
+msgctxt "Pattern description"
+msgid "A hero with an overlapped book cover and links."
+msgstr "هیرو با جلد کتاب همپوشانی شده و پیوندها."
+
+#: patterns/event-schedule.php:57
+msgid "Fauna from North America and its characteristics"
+msgstr "حیات وحش آمریکای شمالی و ویژگی‌های آن"
+
+#: patterns/format-audio.php:26
+msgid "Episode 1: Acoma Pueblo with Prof. Fiona Presley"
+msgstr "قسمت ۱: آکومای پوئبلو با پروفسور فیونا پرسلی"
+
+#: patterns/contact-info-locations.php:54
+#: patterns/contact-info-locations.php:66
+#: patterns/contact-info-locations.php:78
+#: patterns/contact-info-locations.php:90
+msgid "123 Example St. Manhattan, NY 10300 United States"
+msgstr "ایالات متحده، نیویورک ۱۰۳۰۰، منهتن، خیابان مثال ۱۲۳"
+
+#: patterns/footer-social.php
+msgctxt "Pattern description"
+msgid "Footer with centered site title and social links."
+msgstr "پابرگ با عنوان سایت وسط‌چین و پیوندهای اجتماعی."
+
+#: patterns/footer-newsletter.php
+msgctxt "Pattern description"
+msgid "Footer with large site title and newsletter signup."
+msgstr "پابرگ با عنوان سایت بزرگ و ثبت نام در خبرنامه."
+
+#: patterns/footer.php
+msgctxt "Pattern description"
+msgid "Footer columns with logo, title, tagline and links."
+msgstr "ستون‌های پابرگ با آرم، عنوان، معرفی کوتاه و پیوندها."
+
+#: patterns/event-rsvp.php:91
+msgid "Close up photo of white flowers on a grey background"
+msgstr "نمای نزدیک از گل‌های سفید روی پس‌زمینه خاکستری"
+
+#: patterns/hidden-blog-heading.php
+msgctxt "Pattern description"
+msgid "Hidden heading for the home page and index template."
+msgstr "تیتر مخفی برای برگهٔ خانه و قالب نمایه."
+
+#: patterns/cta-centered-heading.php
+msgctxt "Pattern description"
+msgid "A hero with a centered heading, paragraph and button."
+msgstr "هیرو با یک تیتر وسط‌چین، پاراگراف و دکمه."
+
+#: patterns/overlapped-images.php
+msgctxt "Pattern description"
+msgid "A section with overlapping images, and a description."
+msgstr "یک بخش با تصاویر همپوشان و یک توضیح."
+
+#: patterns/pricing-2-col.php:44 patterns/pricing-2-col.php:88
+#: patterns/services-subscriber-only-section.php:27
+msgid "Get access to our paid articles and weekly newsletter."
+msgstr "به مقالات پولی و خبرنامه هفتگی ما دسترسی پیدا کنید."
+
+#: patterns/pricing-3-col.php:41
+msgid "Get access to our free articles and weekly newsletter."
+msgstr "به مقالات رایگان و خبرنامه هفتگی ما دسترسی پیدا کنید."
+
+#: patterns/cta-grid-products-link.php
+msgctxt "Pattern title"
+msgid "Call to action with grid layout with products and link"
+msgstr "دعوت به اقدام با طرح شبکه‌ای شامل محصولات و پیوند."
+
+#: patterns/template-query-loop-photo-blog.php
+msgctxt "Pattern description"
+msgid "A list of posts, 3 columns, with only featured images."
+msgstr "یک فهرست از نوشته‌ها، ۳ ستون، با فقط تصاویر شاخص."
+
+#: patterns/cta-heading-search.php
+msgctxt "Pattern description"
+msgid "Large heading with a search form for quick navigation."
+msgstr "تیتر بزرگ با یک فرم جستجو برای راهبری سریع."
+
+#: patterns/event-schedule.php
+msgctxt "Pattern description"
+msgid "A section with specified dates and times for an event."
+msgstr "یک بخش با تاریخ‌ها و زمان‌های مشخص برای یک رویداد."
+
+#: patterns/pricing-3-col.php:117
+msgid "Get access to our paid newsletter and an unlimited pass."
+msgstr "به خبرنامه پولی ما و یک مجوز نامحدود دسترسی پیدا کنید."
+
+#: patterns/services-3-col.php
+msgctxt "Pattern description"
+msgid "Three columns with images and text to showcase services."
+msgstr "سه ستون با تصاویر و متن برای به نمایش گذاشتن خدمات."
+
+#: patterns/services-subscriber-only-section.php:69
+msgid "Smartphones capturing a scenic wildflower meadow with trees"
+msgstr "گوشی‌های هوشمند در حال ثبت یک علفزار گل‌های وحشی با درختان"
+
+#: patterns/services-team-photos.php
+msgctxt "Pattern description"
+msgid "Display team photos in a services section with grid layout."
+msgstr "نمایش عکس‌های تیم در بخش خدمات با طرح شبکه‌ای."
+
+#: patterns/template-query-loop.php
+msgctxt "Pattern description"
+msgid "A list of posts, 1 column, with featured image and post date."
+msgstr "یک فهرست از نوشته‌ها، ۱ ستون، با تصویر شاخص و تاریخ نوشته."
+
+#: patterns/contact-info-locations.php
+msgctxt "Pattern description"
+msgid "Contact section with social media links, email, and multiple location details."
+msgstr "بخش تماس با پیوند‌های رسانه اجتماعی، ایمیل و جزئیات چندین مکان."
+
+#: patterns/pricing-2-col.php
+msgctxt "Pattern description"
+msgid "Pricing section with two columns, pricing plan, description, and call-to-action buttons."
+msgstr "بخش قیمت‌گذاری با دو ستون، طرح قیمت‌گذاری، توضیحات و دکمه‌های دعوت به اقدام."
+
+#: patterns/contact-location-and-link.php
+msgctxt "Pattern description"
+msgid "Contact section with a location address, a directions link, and an image of the location."
+msgstr "بخش تماس با آدرس مکان، پیوند مسیر و تصویری از مکان."
+
+#: patterns/contact-location-and-link.php:22
+msgid "Visit us at 123 Example St. Manhattan, NY 10300, United States"
+msgstr "از ما در ایالات متحده، نیویورک ۱۰۳۰۰، منهتن، خیابان مثال ۱۲۳ بازدید نمایید."
+
+#: patterns/pricing-3-col.php
+msgctxt "Pattern description"
+msgid "A three-column boxed pricing table designed to showcase services, descriptions, and pricing options."
+msgstr "یک جدول قیمت‌گذاری جعبه‌ای سه ستونه که برای به نمایش گذاشتن خدمات، توضیحات و گزینه‌های قیمت‌گذاری طراحی شده است."
+
+#: patterns/cta-book-links.php
+msgctxt "Pattern description"
+msgid "A call to action section with links to get the book in different websites."
+msgstr "یک بخش دعوت به اقدام با پیوند‌های دریافت کتاب در وب‌سایت‌های مختلف."
+
+#: patterns/pricing-3-col.php:77
+msgid "Get access to our paid newsletter and a limited pass for one event."
+msgstr "به خبرنامه پولی ما و مجوزی محدود برای یک رویداد دسترسی پیدا کنید."
+
+#: patterns/cta-book-links.php:57
+#: patterns/hero-overlapped-book-cover-with-links.php:100
+msgctxt "Pattern placeholder text with link."
+msgid "Outside Europe? View <a href=\"#\" rel=\"nofollow\">international editions</a>."
+msgstr "خارج از اروپا؟ <a href=\"#\" rel=\"nofollow\">نسخه‌های بین‌المللی</a> را مشاهده نمایید."
+
+#: patterns/cta-book-locations.php
+msgctxt "Pattern description"
+msgid "A call to action section with links to get the book in the most popular locations."
+msgstr "یک بخش دعوت به اقدام با پیوندهایی برای دریافت کتاب در محبوب‌ترین مکان‌ها."
+
+#: patterns/cta-book-locations.php:27
+msgid "The Stories Book will be available from these international retailers."
+msgstr "کتاب داستان‌ها از این خرده‌فروشان بین‌المللی در دسترس خواهد بود."
+
+#: patterns/services-subscriber-only-section.php
+msgctxt "Pattern description"
+msgid "A subscriber-only section highlighting exclusive services and offerings."
+msgstr "یک بخش مخصوص مشترکین که خدمات و پیشنهادات انحصاری را برجسته می‌کند."
+
+#: patterns/services-team-photos.php:21
+msgid "Our small team is a group of driven, detail-oriented people who are passionate about their customers."
+msgstr "تیم کوچک ما گروهی از افراد پرتلاش و دقیق است که به مشتریان خود علاقه‌مند هستند."
+
+#: patterns/cta-centered-heading.php:22
+msgid "Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience, revealing hidden wonders."
+msgstr "مانند گل‌هایی که در مکان‌های غیرمنتظره می‌شکفند، هر داستان با زیبایی و استقامت آشکار می‌شود و شگفتی‌های پنهان را نمایان می‌کند."
+
+#: patterns/services-3-col.php:36 patterns/services-3-col.php:54
+#: patterns/services-3-col.php:72
+msgid "Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience"
+msgstr "مانند گل‌هایی که در مکان‌های غیرمنتظره می‌شکفند، هر داستان با زیبایی و استقامت آشکار می‌شود"
+
+#: patterns/event-rsvp.php:73
+msgid "This immersive event celebrates the universal human experience through the lenses of history and ancestry, featuring a diverse array of photographers whose works capture the essence of different cultures and historical moments."
+msgstr "این رویداد همه‌جانبه تجربهٔ مشترک انسانی را از دریچهٔ تاریخ و تبارشناسی گرامی می‌دارد و مجموعه‌ای متنوع از عکاسان را به نمایش می‌گذارد که آثارشان جوهرهٔ فرهنگ‌های گوناگون و لحظات تاریخی را به تصویر می‌کشند."
+
+#: patterns/format-link.php:17
+msgid "The Stories Book, a fine collection of moments in time featuring photographs from Louis Fleckenstein, Paul Strand and Asahachi Kōno, is available for pre-order"
+msgstr "کتاب داستان‌ها، مجموعه‌ای ارزشمند از لحظات جاودانه، شامل عکس‌هایی از لوئیس فلکنشتاین، پل استرند و آساهاتچی کونُو، اکنون برای پیش‌خرید در دسترس است"
+
+#: patterns/heading-and-paragraph-with-image.php:27
+msgctxt "Event Overview Text."
+msgid "Held over a weekend, the event is structured around a series of exhibitions, workshops, and panel discussions. The exhibitions showcase a curated selection of photographs that tell compelling stories from various corners of the globe, each image accompanied by detailed narratives that provide context and deeper insight into the historical significance of the scenes depicted. These photographs are drawn from the archives of renowned photographers, as well as emerging talents, ensuring a blend of both classical and contemporary perspectives."
+msgstr "این رویداد که در طول یک آخر هفته برگزار می‌شود، حول محور مجموعه‌ای از نمایشگاه‌ها، کارگاه‌ها و بحث‌های گروهی ساختار یافته است. نمایشگاه‌ها مجموعه‌ای منتخب از عکس‌هایی را به نمایش می‌گذارند که داستان‌های تأثیرگذاری از گوشه و کنار جهان روایت می‌کنند. هر تصویر با روایت‌های دقیقی همراه است که زمینه و بینش عمیق‌تری در مورد اهمیت تاریخی صحنه‌های به تصویر کشیده ارائه می‌دهند. این عکس‌ها از آرشیو عکاسان برجسته و همچنین استعدادهای نوظهور انتخاب شده‌اند تا ترکیبی از دیدگاه‌های کلاسیک و معاصر را تضمین کنند."
+
+#: patterns/hero-podcast.php:36
+msgctxt "Podcast description"
+msgid "Storytelling, expert analysis, and vivid descriptions. The Stories Podcast brings history to life, making it accessible and engaging for a global audience."
+msgstr "داستان‌سرایی، تحلیل‌های کارشناسی، و توصیفات زنده. پادکست داستان‌ها تاریخ را زنده می‌کند و آن را برای مخاطبان جهانی قابل دسترس و جذاب می‌سازد."
+
+#: patterns/hero-full-width-image.php:27
+msgctxt "Sample hero paragraph"
+msgid "Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience, revealing hidden wonders."
+msgstr "مانند گل‌هایی که در مکان‌های غیرمنتظره می‌شکفند، هر داستان با زیبایی و استقامت آشکار می‌شود و شگفتی‌های پنهان را نمایان می‌کند."
+
+#: patterns/hero-book.php:42
+msgctxt "Content of the hero section."
+msgid "A fine collection of moments in time featuring photographs from Louis Fleckenstein, Paul Strand and Asahachi Kōno."
+msgstr "مجموعه‌ای نفیس از لحظاتی در گذر زمان، شامل عکس‌هایی از لویی فکنشتاین، پل استرند و آساهاچی کونو."
+
+#: patterns/hero-overlapped-book-cover-with-links.php:34
+msgctxt "Hero - Overlapped book cover pattern subline text"
+msgid "A fine collection of moments in time featuring photographs from Louis Fleckenstein, Paul Strand and Asahachi Kōno."
+msgstr "مجموعه‌ای نفیس از لحظاتی در گذر زمان، شامل عکس‌هایی از لویی فکنشتاین، پل استرند و آساهاچی کونو."
+
+#: patterns/format-audio.php:30
+msgid "Acoma Pueblo, in New Mexico, stands as a testament to the resilience and cultural heritage of the Acoma people"
+msgstr "آکوما پوئبلو در نیومکزیکو به عنوان نمادی از استقامت و میراث فرهنگی مردم آکومای شناخته می‌شود."
+
+#: patterns/hidden-404.php:36
+msgctxt "404 error message"
+msgid "The page you are looking for doesn't exist, or it has been moved. Please try searching using the form below."
+msgstr "برگه‌ای که به دنبال آن هستید وجود ندارد یا منتقل شده است. لطفاً با استفاده از فرم زیر جستجو کنید."
+
+#: patterns/cta-newsletter.php:23
+msgid "Get access to a curated collection of moments in time featuring photographs from historical relevance."
+msgstr "به مجموعه‌ای انتخاب شده از لحظه‌ها به همراه عکس‌های مرتبط تاریخی دسترسی پیدا کنید."
+
+#: patterns/event-3-col.php
+msgctxt "Pattern description"
+msgid "A header with title and text and three columns that show 3 events with their images and titles."
+msgstr "یک سربرگ با عنوان و متن و سه ستون که ۳ رویداد را با تصاویر و عناوین آنها نمایش می‌دهد."
+
+#: patterns/event-rsvp.php
+msgctxt "Pattern description"
+msgid "RSVP for an upcoming event with a cover image and event details."
+msgstr "پاسخ به دعوت برای یک رویداد آینده با تصویر کاور و جزئیات رویداد."
+
+#: patterns/format-audio.php
+msgctxt "Pattern description"
+msgid "An audio post format with an image, title, audio player, and description."
+msgstr "یک ساختار نوشته صوتی با یک تصویر، عنوان، پخش‌کننده صوتی و توضیحات."
+
+#: patterns/format-link.php
+msgctxt "Pattern description"
+msgid "A link post format with a description and an emphasized link for key content."
+msgstr "یک ساختار نوشته پیوند با یک توضیح و یک پیوند مورد تاکید برای محتوای کلیدی."
+
+#: patterns/heading-and-paragraph-with-image.php
+msgctxt "Pattern description"
+msgid "A two-column section with a heading and paragraph on the left, and an image on the right."
+msgstr "یک بخش دو ستونه با یک تیتر و پاراگراف در سمت چپ و یک تصویر در سمت راست."
+
+#: patterns/hero-book.php
+msgctxt "Pattern description"
+msgid "A hero section for the book with a description and pre-order link."
+msgstr "یک بخش هیرو برای کتاب با توضیحات و پیوند پیش‌سفارش."
+
+#: patterns/hero-full-width-image.php
+msgctxt "Pattern description"
+msgid "A hero with a full width image, heading, short paragraph and button."
+msgstr "یک هیرو با تصویر تمام‌عرض، تیتر، پاراگراف کوتاه و دکمه."
+
+#: patterns/hidden-sidebar.php:37
+#: patterns/template-home-posts-grid-news-blog.php:34
+#: patterns/template-home-with-sidebar-news-blog.php:61
+msgid "Add text or blocks that will display when a query returns no results."
+msgstr "متن یا بلوک‌هایی را اضافه نمایید تا هنگامی که کوئری نتیجه‌ای نداشت نمایش داده شوند."
+
+#: patterns/hidden-sidebar.php:38 patterns/page-portfolio-home.php:65
+#: patterns/page-portfolio-home.php:87 patterns/page-portfolio-home.php:121
+#: patterns/page-portfolio-home.php:154 patterns/page-portfolio-home.php:176
+#: patterns/page-portfolio-home.php:203 patterns/template-home-news-blog.php:40
+#: patterns/template-home-posts-grid-news-blog.php:35
+#: patterns/template-home-posts-grid-news-blog.php:60
+#: patterns/template-home-posts-grid-news-blog.php:78
+#: patterns/template-home-posts-grid-news-blog.php:103
+#: patterns/template-home-with-sidebar-news-blog.php:62
+#: patterns/template-home-with-sidebar-news-blog.php:119
+#: patterns/template-query-loop-news-blog.php:55
+#: patterns/template-query-loop-photo-blog.php:22
+#: patterns/template-query-loop-text-blog.php:19
+#: patterns/template-query-loop-vertical-header-blog.php:47
+#: patterns/template-query-loop.php:31
+msgctxt "Message explaining that there are no results returned from a search."
+msgid "Sorry, but nothing was found. Please try a search with different keywords."
+msgstr "با عرض پوزش، اما چیزی پیدا نشد. لطفا جستجو با کلمات کلیدی متفاوت را امتحان کنید."
+
+#: patterns/logos.php
+msgctxt "Pattern description"
+msgid "Showcasing the podcast's clients with a heading and a series of client logos."
+msgstr "به نمایش گذاشتن مشتریان پادکست با یک تیتر و مجموعه‌ای از آرم‌های مشتری."
+
+#: patterns/media-instagram-grid.php
+msgctxt "Pattern description"
+msgid "A grid section with photos and a link to an Instagram profile."
+msgstr "یک بخش شبکه‌ای با عکس‌ها و پیوندی به پروفایل اینستاگرام."
+
+#: patterns/media-instagram-grid.php:48
+msgid "Portrait of an African Woman dressed in traditional costume, wearing decorative jewelry."
+msgstr "تک‌چهره یک زن آفریقایی که لباس سنتی به تن دارد و جواهرات تزئینی می‌پوشد."
+
+#: patterns/banner-about-book.php
+msgctxt "Pattern description"
+msgid "Banner with book description and accompanying image for promotion."
+msgstr "بنر با توضیحات کتاب و تصویر همراه برای تبلیغ."
+
+#: patterns/template-home-posts-grid-news-blog.php
+msgctxt "Pattern title"
+msgid "News blog with featured posts grid"
+msgstr "بلاگ اخبار با شبکه نوشته‌های ویژه"
+
+#: patterns/cta-grid-products-link.php:32
+msgid "Delivered every week"
+msgstr "تحویل هر هفته"
+
+#: patterns/cta-grid-products-link.php:100
+msgid "Cancel anytime"
+msgstr "انصراف در هر زمان"
+
+#: patterns/cta-book-links.php:23
+#: patterns/hero-overlapped-book-cover-with-links.php:55
+msgctxt "Example brand name."
+msgid "Amazon"
+msgstr "Amazon"
+
+#: patterns/cta-book-links.php:27
+#: patterns/hero-overlapped-book-cover-with-links.php:77
+msgctxt "Example brand name."
+msgid "Audible"
+msgstr "Audible"
+
+#: patterns/cta-book-links.php:35
+#: patterns/hero-overlapped-book-cover-with-links.php:62
+msgctxt "Example brand name."
+msgid "Apple Books"
+msgstr "Apple Books"
+
+#: patterns/cta-book-links.php:43
+msgctxt "Example brand name."
+msgid "Spotify"
+msgstr "Spotify"
+
+#: patterns/banner-intro.php
+msgctxt "Pattern description"
+msgid "A large left-aligned heading with a brand name emphasized in bold."
+msgstr "یک تیتر بزرگ چپ‌چین با نام تجاری مورد تاکید به‌صورت برجسته."
+
+#: patterns/banner-intro.php
+msgctxt "Pattern title"
+msgid "Intro with left-aligned description"
+msgstr "مقدمه با توضیحات چپ‌چین."
+
+#: patterns/contact-centered-social-link.php
+msgctxt "Pattern title"
+msgid "Centered link and social links"
+msgstr "پیوند و پیوندهای اجتماعی وسط‌چین"
+
+#: patterns/cta-centered-heading.php
+msgctxt "Pattern title"
+msgid "Centered heading"
+msgstr "تیتر وسط‌چین"
+
+#: patterns/banner-intro.php:22
+#: patterns/banner-with-description-and-images-grid.php:32
+#: patterns/footer-columns.php:46 patterns/overlapped-images.php:48
+msgctxt "Example brand name."
+msgid "Fleurs"
+msgstr "فلرز"
+
+#: styles/02-noon.json styles/06-morning.json styles/07-sunrise.json
+#: styles/08-midnight.json styles/typography/typography-preset-1.json
+#: styles/typography/typography-preset-5.json
+#: styles/typography/typography-preset-6.json
+#: styles/typography/typography-preset-7.json
+msgctxt "Font family name"
+msgid "Literata"
+msgstr "Literata"
+
+#: theme.json styles/05-twilight.json
+#: styles/typography/typography-preset-4.json
+msgctxt "Font family name"
+msgid "Manrope"
+msgstr "Manrope"
+
+#: patterns/event-schedule.php:132 patterns/media-instagram-grid.php:52
+msgid "The Acropolis of Athens."
+msgstr "آکروپولیس آتن."
+
+#: patterns/event-schedule.php:163
+msgid "Black and white photo of an African woman."
+msgstr "عکس سیاه و سفید از یک زن آفریقایی."
+
+#: patterns/hero-podcast.php:49
+msgctxt "Button text"
+msgid "YouTube"
+msgstr "یوتیوب"
+
+#: patterns/text-faqs.php
+msgctxt "Pattern description"
+msgid "A FAQs section with a FAQ heading and list of questions and answers."
+msgstr "بخش پرسش‌های متداول به همراه عنوان پرسش‌های متداول و فهرستی از پرسش‌ها و پاسخ‌ها."
+
+#: functions.php:116
+msgid "Post formats"
+msgstr "ساختار نوشته"
+
+#: patterns/template-page-vertical-header-blog.php
+msgctxt "Pattern title"
+msgid "Right-aligned page"
+msgstr "برگه راست‌چین"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Vertical site header"
+msgstr "سربرگ عمودی سایت"
+
+#: patterns/vertical-header.php
+msgctxt "Pattern title"
+msgid "Vertical site header"
+msgstr "سربرگ عمودی سایت"
+
+#: patterns/header-centered.php
+msgctxt "Pattern title"
+msgid "Centered site header"
+msgstr "سربرگ وسط‌چین سایت"
+
+#: patterns/template-404-vertical-header-blog.php
+msgctxt "Pattern title"
+msgid "Right-aligned 404"
+msgstr "۴۰۴ راست‌چین"
+
+#: patterns/template-archive-text-blog.php
+msgctxt "Pattern title"
+msgid "Text blog archive"
+msgstr "بایگانی بلاگ متن"
+
+#: patterns/template-single-text-blog.php
+msgctxt "Pattern title"
+msgid "Text blog single post"
+msgstr "تک نوشته وبلاگ متن"
+
+#: patterns/header-large-title.php
+msgctxt "Pattern description"
+msgid "Site header with large site title and right-aligned navigation."
+msgstr "سربرگ سایت با عنوان بزرگ سایت و راهبری راست‌چین."
+
+#: patterns/template-home-text-blog.php
+msgctxt "Pattern title"
+msgid "Text blog home"
+msgstr "خانهٔ بلاگ متن"
+
+#: patterns/header.php
+msgctxt "Pattern description"
+msgid "Site header with site title and navigation."
+msgstr "سربرگ سایت با عنوان سایت و راهبری."
+
+#: patterns/vertical-header.php
+msgctxt "Pattern description"
+msgid "Vertical site header with site title and navigation."
+msgstr "سربرگ عمودی سایت با عنوان سایت و راهبری."
+
+#: patterns/header-centered.php
+msgctxt "Pattern description"
+msgid "Site header with centered site title and navigation."
+msgstr "سربرگ سایت با عنوان سایت و راهبری در مرکز."
+
+#: patterns/header-columns.php
+msgctxt "Pattern description"
+msgid "Site header with site title and navigation in columns."
+msgstr "سربرگ سایت با عنوان سایت و راهبری در ستون‌ها."
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "the WordPress team"
+msgstr "تیم وردپرس"
+
+#. Author URI of the theme
+#: style.css patterns/footer-centered.php:34 patterns/footer-columns.php:74
+#: patterns/footer-newsletter.php:50 patterns/footer-social.php:36
+#: patterns/footer.php:83
+#, gp-priority: low
+msgid "https://wordpress.org"
+msgstr "https://wordpress.org"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://wordpress.org/themes/twentytwentyfive/"
+msgstr "https://fa.wordpress.org/themes/twentytwentyfive/"
