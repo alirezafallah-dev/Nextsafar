@@ -1,0 +1,452 @@
+/* ═══════════════════════════════════════════════════════════════
+   فونت IRANSansX
+   ═══════════════════════════════════════════════════════════════ */
+@font-face {
+    font-family: 'IRANSansX';
+    src: url('/fonts/iransans/IRANSansX-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansX';
+    src: url('/fonts/iransans/IRANSansX-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansX';
+    src: url('/fonts/iransans/IRANSansX-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansX';
+    src: url('/fonts/iransans/IRANSansX-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSansX';
+    src: url('/fonts/iransans/IRANSansX-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   بدنه و فونت کلی
+   ═══════════════════════════════════════════════════════════════ */
+body, .fi-body {
+    font-family: 'IRANSansX', system-ui, -apple-system, sans-serif !important;
+    direction: rtl;
+    background-color: #f9fafb !important;
+}
+
+* {
+    font-family: 'IRANSansX', system-ui, sans-serif !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   سایدبار - از بالا تا پایین کامل (سمت راست)
+   ═══════════════════════════════════════════════════════════════ */
+.fi-sidebar {
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0;
+    right: 0 !important;
+    left: auto !important;
+    z-index: 30;
+    background-color: #ffffff !important;
+    border-left: 1px solid #e5e7eb !important;
+    border-right: none !important;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.03);
+    width: 260px !important;
+    overflow-y: auto;
+}
+
+.fi-sidebar-nav {
+    padding: 1rem 0.75rem !important;
+}
+
+.fi-sidebar-header {
+    padding: 1.5rem 1rem !important;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* آیتم‌های سایدبار */
+.fi-sidebar-item {
+    margin-bottom: 0.25rem;
+}
+
+.fi-sidebar-item-button {
+    padding: 0.75rem 1rem !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease-in-out !important;
+    color: #4b5563 !important;
+    font-weight: 400 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+}
+
+/* هاور سایدبار - رنگ #ee1500 */
+.fi-sidebar-item-button:hover {
+    background-color: rgba(251, 168, 52, 0.1) !important;
+    color: #ee1500 !important;
+}
+
+.fi-sidebar-item-button:hover svg {
+    color: #ee1500 !important;
+}
+
+/* آیتم فعال سایدبار */
+.fi-sidebar-item-active .fi-sidebar-item-button {
+    background-color: #fba834 !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-button svg {
+    color: #ffffff !important;
+}
+
+/* آیکون‌های سایدبار */
+.fi-sidebar-item-icon {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   محتوای اصلی (سمت چپ)
+   ═══════════════════════════════════════════════════════════════ */
+.fi-main-ctn {
+    margin-right: 260px !important;
+    margin-left: 0 !important;
+    min-height: 100vh;
+}
+
+.fi-body {
+    padding: 2rem !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   هدر ثابت بالای بخش چپ
+   ═══════════════════════════════════════════════════════════════ */
+.fi-topbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 20;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    margin: -2rem -2rem 2rem -2rem !important;
+    padding: 1rem 2rem !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   کارت‌ها - گوشه‌های گرد 10px با سایه نرم
+   ═══════════════════════════════════════════════════════════════ */
+.fi-section,
+.fi-widget,
+.fi-wi-stats-overview-stat,
+.fi-ta-ctn {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e5e7eb !important;
+    background-color: #ffffff !important;
+    overflow: hidden;
+}
+
+.fi-section {
+    padding: 1.5rem !important;
+    margin-bottom: 1rem;
+}
+
+.fi-section-header {
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+}
+
+.fi-section-header-heading {
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    color: #111827 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   تیبل‌ها
+   ═══════════════════════════════════════════════════════════════ */
+.fi-ta-ctn {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.fi-ta-header {
+    background-color: #f9fafb !important;
+    padding: 1rem 1.5rem !important;
+}
+
+.fi-ta-header-heading {
+    font-size: 1.125rem !important;
+    font-weight: 600 !important;
+    color: #111827 !important;
+}
+
+.fi-ta-row {
+    transition: all 0.15s ease-in-out !important;
+}
+
+.fi-ta-row:hover {
+    background-color: #fef9f0 !important;
+}
+
+.fi-ta-cell {
+    padding: 1rem 1.5rem !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+}
+
+.fi-ta-header-cell {
+    padding: 1rem 1.5rem !important;
+    background-color: #f9fafb !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+    font-size: 0.875rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   دکمه‌ها
+   ═══════════════════════════════════════════════════════════════ */
+.fi-btn,
+.fi-btn-color-primary {
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease-in-out !important;
+    padding: 0.625rem 1.25rem !important;
+}
+
+.fi-btn-color-primary {
+    background-color: #fba834 !important;
+    border-color: #fba834 !important;
+    color: #ffffff !important;
+}
+
+.fi-btn-color-primary:hover {
+    background-color: #ee1500 !important;
+    border-color: #ee1500 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(238, 21, 0, 0.2) !important;
+}
+
+.fi-btn-color-secondary {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    color: #374151 !important;
+}
+
+.fi-btn-color-secondary:hover {
+    background-color: #f9fafb !important;
+    border-color: #d1d5db !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Badge ها
+   ═══════════════════════════════════════════════════════════════ */
+.fi-badge {
+    border-radius: 12px !important;
+    padding: 0.375rem 0.875rem !important;
+    font-size: 0.8125rem !important;
+    font-weight: 500 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Inputs
+   ═══════════════════════════════════════════════════════════════ */
+.fi-input input,
+.fi-input textarea,
+.fi-select select {
+    border-radius: 10px !important;
+    border: 1px solid #e5e7eb !important;
+    padding: 0.625rem 1rem !important;
+    transition: all 0.2s ease-in-out !important;
+    font-size: 0.9375rem !important;
+}
+
+.fi-input input:focus,
+.fi-input textarea:focus,
+.fi-select select:focus {
+    border-color: #fba834 !important;
+    box-shadow: 0 0 0 3px rgba(251, 168, 52, 0.15) !important;
+    outline: none !important;
+}
+
+.fi-fo-field-wrp {
+    margin-bottom: 1.25rem !important;
+}
+
+.fi-fo-field-wrp-label {
+    font-weight: 500 !important;
+    color: #374151 !important;
+    margin-bottom: 0.5rem !important;
+    font-size: 0.9375rem !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   آمار و Widget های داشبورد
+   ═══════════════════════════════════════════════════════════════ */
+.fi-wi-stats-overview-stat {
+    border-radius: 10px !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e5e7eb !important;
+}
+
+.fi-wi-stats-overview-stat-label {
+    font-size: 0.875rem !important;
+    color: #6b7280 !important;
+    font-weight: 500 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.fi-wi-stats-overview-stat-value {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+}
+
+.fi-wi-stats-overview-stat-icon {
+    color: #fba834 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Actions و Menu
+   ═══════════════════════════════════════════════════════════════ */
+.fi-dropdown-panel {
+    border-radius: 10px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #e5e7eb !important;
+}
+
+.fi-dropdown-list-item {
+    padding: 0.75rem 1rem !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+.fi-dropdown-list-item:hover {
+    background-color: #fef9f0 !important;
+    color: #ee1500 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Pagination
+   ═══════════════════════════════════════════════════════════════ */
+.fi-pagination {
+    padding: 1rem 1.5rem !important;
+    border-top: 1px solid #f3f4f6 !important;
+}
+
+.fi-pagination-item {
+    border-radius: 8px !important;
+    padding: 0.5rem 0.875rem !important;
+    font-weight: 500 !important;
+}
+
+.fi-pagination-item-active {
+    background-color: #fba834 !important;
+    color: #ffffff !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Login Page
+   ═══════════════════════════════════════════════════════════════ */
+.fi-simple-page {
+    background-color: #f9fafb !important;
+}
+
+.fi-simple-main {
+    border-radius: 10px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #e5e7eb !important;
+    padding: 2.5rem !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .fi-sidebar {
+        width: 70px !important;
+    }
+    
+    .fi-main-ctn {
+        margin-right: 70px !important;
+    }
+    
+    .fi-sidebar-item-button span:not(.fi-sidebar-item-icon) {
+        display: none !important;
+    }
+    
+    .fi-sidebar-header {
+        padding: 1rem 0.5rem !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .fi-main-ctn {
+        margin-right: 0 !important;
+    }
+    
+    .fi-body {
+        padding: 1rem !important;
+    }
+    
+    .fi-topbar {
+        margin: -1rem -1rem 1rem -1rem !important;
+        padding: 1rem !important;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Scrollbar سفارشی
+   ═══════════════════════════════════════════════════════════════ */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+.fi-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.fi-sidebar::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 3px;
+}

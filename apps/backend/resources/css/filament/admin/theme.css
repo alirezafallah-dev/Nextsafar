@@ -1,0 +1,96 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans/IRANSansWeb-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans/IRANSansWeb.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans/IRANSansWeb-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+body {
+    font-family: 'IRANSans', system-ui, sans-serif !important;
+    direction: rtl;
+    background-color: #f9fafb;
+}
+
+/* Sidebar */
+.fi-sidebar {
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    background-color: #ffffff !important;
+    border-left: 1px solid #e5e7eb;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.03);
+    width: 260px !important;
+}
+
+.fi-sidebar-item-button {
+    padding: 0.75rem 1rem !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease-in-out !important;
+    color: #4b5563 !important;
+}
+
+.fi-sidebar-item-button:hover {
+    background-color: rgba(251, 168, 52, 0.1) !important;
+    color: #ee1500 !important;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-button {
+    background-color: #fba834 !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+.fi-main-ctn {
+    margin-right: 260px !important;
+    min-height: 100vh;
+}
+
+/* Cards */
+.fi-section, .fi-widget {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e5e7eb !important;
+    background-color: #ffffff !important;
+}
+
+/* Topbar */
+.fi-topbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 20;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Buttons */
+.fi-btn-color-primary {
+    background-color: #fba834 !important;
+    border-radius: 10px !important;
+}
+
+.fi-btn-color-primary:hover {
+    background-color: #ee1500 !important;
+}
+
+@media (max-width: 1024px) {
+    .fi-sidebar { width: 70px !important; }
+    .fi-main-ctn { margin-right: 70px !important; }
+}

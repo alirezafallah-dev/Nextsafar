@@ -1,0 +1,252 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+/* ═══════════════════════════════════════════════════════════════
+   فونت IRANSans
+   ═══════════════════════════════════════════════════════════════ */
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans/IRANSansWeb-Light.woff2') format('woff2'),
+         url('/fonts/iransans/IRANSansWeb-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans/IRANSansWeb.woff2') format('woff2'),
+         url('/fonts/iransans/IRANSansWeb.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('/fonts/iransans/IRANSansWeb-Bold.woff2') format('woff2'),
+         url('/fonts/iransans/IRANSansWeb-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   متغیرهای CSS (Tailwind)
+   ═══════════════════════════════════════════════════════════════ */
+@layer base {
+    :root {
+        /* رنگ اصلی سفارشی #fba834 */
+        --primary-50: 254 249 240;
+        --primary-100: 253 240 217;
+        --primary-200: 251 224 178;
+        --primary-300: 249 202 129;
+        --primary-400: 247 178 80;
+        --primary-500: 251 168 52;  /* #fba834 */
+        --primary-600: 232 146 31;
+        --primary-700: 198 119 26;
+        --primary-800: 161 94 26;
+        --primary-900: 130 77 25;
+        --primary-950: 70 38 11;
+        
+        /* رنگ هاور #ee1500 */
+        --hover-color: 238 21 0;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   بدنه و فونت کلی
+   ═══════════════════════════════════════════════════════════════ */
+body {
+    font-family: 'IRANSans', system-ui, -apple-system, sans-serif !important;
+    direction: rtl;
+    background-color: #f9fafb;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   سایدبار - از بالا تا پایین کامل
+   ═══════════════════════════════════════════════════════════════ */
+.fi-sidebar {
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    background-color: #ffffff !important;
+    border-left: 1px solid #e5e7eb;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.03);
+    overflow-y: auto;
+}
+
+.fi-sidebar-nav {
+    padding: 1rem 0.75rem;
+}
+
+/* آیکون‌های سایدبار */
+.fi-sidebar-item {
+    margin-bottom: 0.25rem;
+}
+
+.fi-sidebar-item-button {
+    padding: 0.75rem 1rem !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease-in-out !important;
+    color: #4b5563 !important;
+    font-weight: 400 !important;
+}
+
+/* هاور سایدبار - رنگ #ee1500 */
+.fi-sidebar-item-button:hover {
+    background-color: rgba(251, 168, 52, 0.1) !important;
+    color: #ee1500 !important;
+}
+
+.fi-sidebar-item-button:hover svg {
+    color: #ee1500 !important;
+}
+
+/* آیتم فعال سایدبار */
+.fi-sidebar-item-active .fi-sidebar-item-button {
+    background-color: #fba834 !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-button svg {
+    color: #ffffff !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   هدر ثابت بالای بخش چپ
+   ═══════════════════════════════════════════════════════════════ */
+.fi-topbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 20;
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   محتوای اصلی
+   ═══════════════════════════════════════════════════════════════ */
+.fi-main-ctn {
+    margin-right: 260px !important;
+    min-height: 100vh;
+}
+
+.fi-body {
+    background-color: #f9fafb !important;
+    padding: 2rem !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   کارت‌ها
+   ═══════════════════════════════════════════════════════════════ */
+.fi-section,
+.fi-widget,
+.fi-wi-stats-overview-stat {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e5e7eb !important;
+    background-color: #ffffff !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   تیبل‌ها
+   ═══════════════════════════════════════════════════════════════ */
+.fi-ta-ctn {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e5e7eb !important;
+    overflow: hidden !important;
+}
+
+.fi-ta-header {
+    background-color: #f9fafb !important;
+    padding: 1rem !important;
+}
+
+.fi-ta-row:hover {
+    background-color: #fef9f0 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   دکمه‌ها
+   ═══════════════════════════════════════════════════════════════ */
+.fi-btn-primary,
+.fi-btn-color-primary {
+    background-color: #fba834 !important;
+    border-color: #fba834 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.fi-btn-primary:hover,
+.fi-btn-color-primary:hover {
+    background-color: #ee1500 !important;
+    border-color: #ee1500 !important;
+    color: #ffffff !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Badge ها
+   ═══════════════════════════════════════════════════════════════ */
+.fi-badge {
+    border-radius: 12px !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Inputs
+   ═══════════════════════════════════════════════════════════════ */
+.fi-input,
+.fi-select,
+.fi-textarea {
+    border-radius: 10px !important;
+    border: 1px solid #e5e7eb !important;
+    padding: 0.625rem 1rem !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.fi-input:focus,
+.fi-select:focus,
+.fi-textarea:focus {
+    border-color: #fba834 !important;
+    box-shadow: 0 0 0 3px rgba(251, 168, 52, 0.1) !important;
+    outline: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .fi-sidebar {
+        width: 70px !important;
+    }
+    
+    .fi-main-ctn {
+        margin-right: 70px !important;
+    }
+    
+    .fi-sidebar-item-button span {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .fi-sidebar {
+        position: fixed !important;
+        transform: translateX(100%);
+    }
+    
+    .fi-main-ctn {
+        margin-right: 0 !important;
+    }
+}

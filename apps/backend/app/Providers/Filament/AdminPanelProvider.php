@@ -6,11 +6,9 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
-use Filament\Widgets;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
@@ -27,44 +25,44 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            
+            // رنگ اصلی: نارنجی سفارشی (#fba834)
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => [
+                    50 => '#fef9f0',
+                    100 => '#fdf0d9',
+                    200 => '#fbe0b2',
+                    300 => '#f9ca81',
+                    400 => '#f7b250',
+                    500 => '#fba834',  // رنگ اصلی
+                    600 => '#e8921f',
+                    700 => '#c6771a',
+                    800 => '#a15e1a',
+                    900 => '#824d19',
+                    950 => '#46260b',
+                ],
+                'danger' => Color::Red,
+                'warning' => Color::Orange,
+                'success' => Color::Green,
+                'info' => Color::Blue,
+                'gray' => Color::Zinc,
             ])
             
-            // ✅ Discover از مسیر Admin (ساختار ما)
-            ->discoverResources(
-                in: app_path('Filament/Admin/Resources'), 
-                for: 'App\\Filament\\Admin\\Resources'
-            )
-            ->discoverPages(
-                in: app_path('Filament/Admin/Pages'), 
-                for: 'App\\Filament\\Admin\\Pages'
-            )
-            ->discoverWidgets(
-                in: app_path('Filament/Admin/Widgets'), 
-                for: 'App\\Filament\\Admin\\Widgets'
-            )
+            // RTL mode
+            ->spa()
+            ->sidebarCollapsibleOnDesktop()
             
-            // همچنین مسیر استاندارد Filament
-            ->discoverResources(
-                in: app_path('Filament/Resources'), 
-                for: 'App\\Filament\\Resources'
-            )
-            ->discoverPages(
-                in: app_path('Filament/Pages'), 
-                for: 'App\\Filament\\Pages'
-            )
-            ->discoverWidgets(
-                in: app_path('Filament/Widgets'), 
-                for: 'App\\Filament\\Widgets'
-            )
+            // Theme CSS
+            ->theme('filament-custom')
             
+            ->discoverResources(in: app_path('Filament/Admin/Resources'), for: 'App\\Filament\\Admin\\Resources')
+            ->discoverPages(in: app_path('Filament/Admin/Pages'), for: 'App\\Filament\\Admin\\Pages')
+            ->discoverWidgets(in: app_path('Filament/Admin/Widgets'), for: 'App\\Filament\\Admin\\Widgets')
             ->pages([
-                Pages\Dashboard::class,
+                \Filament\Pages\Dashboard::class,
             ])
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                \Filament\Widgets\AccountWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
