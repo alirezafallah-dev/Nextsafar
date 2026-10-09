@@ -6,12 +6,6 @@ return [
     |--------------------------------------------------------------------------
     | Third Party Services
     |--------------------------------------------------------------------------
-    |
-    | This file is for storing the credentials for third party services such
-    | as Mailgun, Postmark, AWS and more. This file provides the de facto
-    | location for this type of information, allowing packages to have
-    | a conventional place to find your various credentials.
-    |
     */
 
     'postmark' => [
@@ -33,6 +27,20 @@ return [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | NextSafar - WordPress Connection
+    |--------------------------------------------------------------------------
+    */
+
+    'wordpress' => [
+        'url' => env('WORDPRESS_URL', 'http://cms.nextsafar.local'),
+        'timeout' => env('WORDPRESS_TIMEOUT', 15),
+        'cache_ttl' => env('WORDPRESS_CACHE_TTL', 3600),
+        'username' => env('WORDPRESS_USERNAME'),
+        'app_password' => env('WORDPRESS_APP_PASSWORD'),
     ],
 
     /*
