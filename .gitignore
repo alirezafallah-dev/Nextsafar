@@ -111,3 +111,6 @@ pnpm-debug.log*
 secrets/
 .DS_Store
 Thumbs.db
+
+# WordPress Uploads (اضافه شد)
+apps/cms/wp-content/uploads/
