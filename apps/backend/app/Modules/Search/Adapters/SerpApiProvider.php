@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Log;
 
 /**
  * ارائه‌دهنده جستجو با SerpApi
- * انتقال یافته از پلاگین وردپرس
  */
 class SerpApiProvider implements ProviderInterface
 {
@@ -30,9 +29,6 @@ class SerpApiProvider implements ProviderInterface
         return !empty($this->apiKey);
     }
     
-    /**
-     * جستجوی پرواز
-     */
     public function searchFlights(array $params): array
     {
         try {
@@ -51,7 +47,6 @@ class SerpApiProvider implements ProviderInterface
             if ($response->failed()) {
                 Log::error('SerpApi flight search failed', [
                     'status' => $response->status(),
-                    'body' => $response->body(),
                 ]);
                 return [];
             }
@@ -66,9 +61,6 @@ class SerpApiProvider implements ProviderInterface
         }
     }
     
-    /**
-     * جستجوی هتل
-     */
     public function searchHotels(array $params): array
     {
         try {
@@ -84,9 +76,7 @@ class SerpApiProvider implements ProviderInterface
             ]);
             
             if ($response->failed()) {
-                Log::error('SerpApi hotel search failed', [
-                    'status' => $response->status(),
-                ]);
+                Log::error('SerpApi hotel search failed');
                 return [];
             }
             
@@ -100,9 +90,6 @@ class SerpApiProvider implements ProviderInterface
         }
     }
     
-    /**
-     * جستجوی عمومی
-     */
     public function search(array $params): array
     {
         $type = $params['type'] ?? 'general';
@@ -114,9 +101,6 @@ class SerpApiProvider implements ProviderInterface
         };
     }
     
-    /**
-     * تبدیل نتایج پرواز
-     */
     private function transformFlightResults(array $data): array
     {
         $flights = [];
@@ -135,16 +119,12 @@ class SerpApiProvider implements ProviderInterface
                 ],
                 'price' => $flight['price'] ?? 0,
                 'currency' => 'IRR',
-                'stops' => count($flight['legs'] ?? []) - 1,
             ];
         }
         
         return $flights;
     }
     
-    /**
-     * تبدیل نتایج هتل
-     */
     private function transformHotelResults(array $data): array
     {
         $hotels = [];
@@ -154,11 +134,8 @@ class SerpApiProvider implements ProviderInterface
                 'id' => $hotel['property_token'] ?? uniqid(),
                 'name' => $hotel['name'] ?? '',
                 'rating' => $hotel['overall_rating'] ?? 0,
-                'reviews_count' => $hotel['reviews'] ?? 0,
                 'price' => $hotel['price'] ?? 0,
                 'currency' => 'IRR',
-                'images' => $hotel['images'] ?? [],
-                'amenities' => $hotel['amenities'] ?? [],
             ];
         }
         

@@ -3,7 +3,7 @@
 namespace App\Core\Contracts;
 
 /**
- * قرارداد پایه برای همه ارائه‌دهندگان خارجی
+ * قرارداد پایه برای همه ارائه‌دهندگان خارجی (SerpApi, SearchApi, etc.)
  */
 interface ProviderInterface
 {

@@ -4,12 +4,9 @@ namespace App\Modules\Search\Services;
 
 use App\Core\Services\BaseService;
 use App\Modules\Search\Providers\ProviderFactory;
-use App\Core\Contracts\ProviderInterface;
-use Illuminate\Support\Facades\Log;
 
 /**
  * سرویس اصلی جستجو
- * با قابلیت Fallback خودکار بین ارائه‌دهندگان
  */
 class SearchService extends BaseService
 {
@@ -18,21 +15,15 @@ class SearchService extends BaseService
         return 'Search';
     }
     
-    /**
-     * جستجوی پرواز
-     */
     public function searchFlights(array $params): array
     {
         $cacheKey = 'flights:' . md5(json_encode($params));
         
         return $this->cacheRemember($cacheKey, function() use ($params) {
             return $this->executeWithFallback('flight', $params);
-        }, 300); // 5 دقیقه کش
+        }, 300);
     }
     
-    /**
-     * جستجوی هتل
-     */
     public function searchHotels(array $params): array
     {
         $cacheKey = 'hotels:' . md5(json_encode($params));
@@ -42,9 +33,6 @@ class SearchService extends BaseService
         }, 300);
     }
     
-    /**
-     * اجرا با Fallback خودکار
-     */
     private function executeWithFallback(string $type, array $params): array
     {
         $providers = ProviderFactory::getAvailable();
@@ -57,7 +45,6 @@ class SearchService extends BaseService
                 
                 if (!empty($result)) {
                     $this->log("Success with {$provider->getName()}", [
-                        'type' => $type,
                         'count' => count($result),
                     ]);
                     return $result;
