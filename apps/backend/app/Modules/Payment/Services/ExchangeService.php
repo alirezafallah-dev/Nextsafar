@@ -2,24 +2,23 @@
 
 namespace App\Modules\Payment\Services;
 
+use App\Modules\Payment\Models\ExchangeSetting;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
 /**
- * سرویس نرخ ارز - منتقل شده از وردپرس
+ * سرویس نرخ ارز - مدیریت از Filament
  * 
  * API: BrsApi.ir
- * Cache: 1 ساعت
+ * Cache: بر اساس cache_duration در exchange_settings
  */
 class ExchangeService
 {
     private const CACHE_KEY = 'exchange_rates';
-    private const CACHE_DURATION = 3600; // 1 ساعت
     
     /**
      * تبدیل نام فارسی به کد ارز
-     * مثال: "درهم" → "AED"
      */
     private const PERSIAN_TO_CODE = [
         'دلار'        => 'USD',
@@ -71,12 +70,10 @@ class ExchangeService
     {
         $currency = trim($currency);
         
-        // اگر کد 3 حرفی است (USD, AED, ...)
         if (preg_match('/^[A-Za-z]{3}$/', $currency)) {
             return strtoupper($currency);
         }
         
-        // جستجو در نام‌های فارسی
         foreach (self::PERSIAN_TO_CODE as $persian => $code) {
             if (mb_strpos($currency, $persian) !== false) {
                 return $code;
@@ -93,7 +90,6 @@ class ExchangeService
     {
         $code = self::normalizeCode($currency);
         
-        // IRR همیشه 1 است
         if ($code === 'IRR') {
             return 1.0;
         }
@@ -113,39 +109,90 @@ class ExchangeService
     }
 
     /**
-     * دریافت همه نرخ‌ها (با کش)
+     * دریافت همه نرخ‌ها
+     * 
+     * اولویت:
+     * 1. کش (اگر معتبر باشد)
+     * 2. نرخ‌های live از دیتابیس (اگر use_live_rates فعال باشد)
+     * 3. نرخ‌های manual از دیتابیس
      */
     public static function getExchangeRates(): array
     {
+        $settings = ExchangeSetting::getCurrent();
+        $cacheDuration = $settings->cache_duration;
+        
         // بررسی کش
         $cached = Cache::get(self::CACHE_KEY);
         if ($cached !== null && is_array($cached) && !empty($cached)) {
             return $cached;
         }
 
-        // دریافت از API
-        $rates = self::fetchFromApi();
+        // دریافت از دیتابیس
+        $rates = $settings->getActiveRates();
+
+        // اگر خالی بود و use_live_rates فعال بود، از API بگیر
+        if (empty($rates) && $settings->use_live_rates && $settings->hasApiKey()) {
+            $rates = self::fetchFromApi($settings->api_key);
+            
+            if (!empty($rates)) {
+                $settings->updateRates($rates);
+            }
+        }
+
+        // اگر هنوز خالی بود، از manual استفاده کن
+        if (empty($rates)) {
+            $rates = $settings->manual_rates ?? [];
+        }
 
         // ذخیره در کش
         if (!empty($rates)) {
-            Cache::put(self::CACHE_KEY, $rates, self::CACHE_DURATION);
+            Cache::put(self::CACHE_KEY, $rates, $cacheDuration);
         }
 
         return $rates;
     }
 
     /**
-     * دریافت نرخ‌ها از BrsApi
+     * بروزرسانی دستی نرخ‌ها از API (از Filament فراخوانی می‌شود)
      */
-    private static function fetchFromApi(): array
+    public static function refreshRates(): array
     {
-        $apiKey = config('services.brsapi.key');
+        $settings = ExchangeSetting::getCurrent();
         
-        if (empty($apiKey)) {
-            Log::warning('BrsApi API key not configured');
-            return self::getManualRates();
+        if (!$settings->hasApiKey()) {
+            return [
+                'success' => false,
+                'error' => 'api_key_missing',
+                'message' => 'کلید API تنظیم نشده است',
+            ];
         }
 
+        $rates = self::fetchFromApi($settings->api_key);
+        
+        if (empty($rates)) {
+            return [
+                'success' => false,
+                'error' => 'fetch_failed',
+                'message' => 'دریافت نرخ‌ها از API ناموفق بود',
+            ];
+        }
+
+        $settings->updateRates($rates);
+        self::clearCache();
+
+        return [
+            'success' => true,
+            'message' => 'نرخ‌ها با موفقیت بروزرسانی شدند',
+            'count' => count($rates),
+            'rates' => $rates,
+        ];
+    }
+
+    /**
+     * دریافت نرخ‌ها از BrsApi
+     */
+    private static function fetchFromApi(string $apiKey): array
+    {
         $rates = [];
         $supported = array_keys(self::getSupportedCurrencies());
 
@@ -172,7 +219,6 @@ class ExchangeService
         if (empty($rates)) {
             try {
                 $url = 'https://brsapi.ir/FreeTsetmcBourseApi/Api_Free_Gold_Currency_v2.json';
-                
                 $response = Http::timeout(15)->get($url);
                 
                 if ($response->successful()) {
@@ -182,11 +228,6 @@ class ExchangeService
             } catch (\Throwable $e) {
                 Log::error('BrsApi fallback API failed', ['error' => $e->getMessage()]);
             }
-        }
-
-        // اگر باز هم خالی بود، نرخ‌های دستی
-        if (empty($rates)) {
-            return self::getManualRates();
         }
 
         return $rates;
@@ -223,7 +264,6 @@ class ExchangeService
             $unit = isset($item['unit']) ? strtolower(trim($item['unit'])) : '';
 
             if ($price > 0 && in_array($symbol, $supported, true)) {
-                // اگر تومان بود، تبدیل به ریال
                 if ($unit === 'تومان' || $unit === 'toman') {
                     $price *= 10;
                 }
@@ -233,27 +273,6 @@ class ExchangeService
         }
 
         return $rates;
-    }
-
-    /**
-     * نرخ‌های دستی (fallback)
-     */
-    private static function getManualRates(): array
-    {
-        return [
-            'USD' => 600000,   // 60,000 تومان = 600,000 ریال
-            'EUR' => 650000,
-            'GBP' => 750000,
-            'AED' => 163000,   // 16,300 تومان
-            'TRY' => 18000,    // 1,800 تومان
-            'THB' => 17000,    // 1,700 تومان
-            'CNY' => 83000,
-            'RUB' => 6500,
-            'OMR' => 1560000,
-            'QAR' => 165000,
-            'IQD' => 460,
-            'MYR' => 135000,
-        ];
     }
 
     /**
