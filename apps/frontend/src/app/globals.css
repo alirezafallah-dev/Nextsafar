@@ -1,26 +1,555 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ═══════════════════════════════════════════════════════════════
+   ۱) DESIGN TOKENS (Tailwind v4)
+═══════════════════════════════════════════════════════════════ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ─── Primary (Brand) ─── */
+  --color-primary: #43abff;
+  --color-primary-dark: #3384c6;
+  --color-primary-light: #b9e0ff;
+  --color-primary-lightest: #e8f5fe;
+
+  /* ─── Surface ─── */
+  --color-surface: #f8f8f8;
+
+  /* ─── Special (Sections) ─── */
+  --color-visa: #ee1500;
+  --color-visa-hover: #ff7800;
+  --color-tour: #fba834;
+  --color-tour-hover: #ff7800;
+
+  /* ─── Text ── */
+  --color-text-strong: #0f172a;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-subtle: #9ca3af;
+
+  /* ─── Background ─── */
+  --color-bg: #ffffff;
+  --color-bg-sec: #f8fafc;
+
+  /* ─── Borders & Dividers ─── */
+  --color-border: #e5e7eb;
+  --color-divider: #edf2f7;
+
+  /* ─── State Colors ─── */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #0ea5b6;
+
+  /* ─── Border Radius System (۶ سطح) ───
+     xs  6px  → بج‌های خیلی کوچک
+     sm  8px  → دکمه‌ها
+     md  12px → inputها، chips، بج‌ها
+     lg  16px → کارت‌ها
+     xl  20px → سکشن‌ها، modals  ← سقف مجاز
+     2xl 24px → فقط hero/overlays  ← تقریباً ممنوع
+  ─── */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+
+  /* ─── Shadows ─── */
+  --shadow-card: 0 1px 3px rgba(16, 24, 40, 0.08), 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-card-hover: 0 12px 24px rgba(16, 24, 40, 0.08), 0 4px 8px rgba(16, 24, 40, 0.04);
+  --shadow-modal: 0 -10px 30px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+  /* ─── Fonts ─── */
+  --font-sans: "IRANSansX", "Inter", system-ui, sans-serif;
+  --font-display: "IRANSansX", "Inter", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, monospace;
+
+  /* ─── Container ─── */
+  --container-2xl: 1280px;
+
+  /* ─── Animations ─── */
+  --animate-fade-in-up: fadeInUp 600ms ease forwards;
+  --animate-fade-in-right: fadeInRight 600ms ease forwards;
+  --animate-slide-down: slideDown 300ms ease forwards;
 }
 
-@media (prefers-color-scheme: dark) {
+/* ═══════════════════════════════════════════════════════════════
+   ۲) FONTS — IRANSansX (۶ وزن مورد نیاز سایت)
+═══════════════════════════════════════════════════════════════ */
+@font-face {
+  font-family: "IRANSansX";
+  src: url("/fonts/IRANSansX-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansX";
+  src: url("/fonts/IRANSansX-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansX";
+  src: url("/fonts/IRANSansX-DemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansX";
+  src: url("/fonts/IRANSansX-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansX";
+  src: url("/fonts/IRANSansX-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSansX";
+  src: url("/fonts/IRANSansX-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ۳) KEYFRAMES + ANIMATION HELPERS
+═══════════════════════════════════════════════════════════════ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate3d(0, 80px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translate3d(-64px, 0, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes ns-sheet-in {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+@keyframes ns-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes ns-history-in {
+  from { transform: translate3d(-100%, 0, 0); opacity: 0.4; }
+  to   { transform: translate3d(0, 0, 0); opacity: 1; }
+}
+
+.animate-ns-sheet { animation: ns-sheet-in 0.28s cubic-bezier(0.32, 0.72, 0, 1); }
+.animate-ns-fade { animation: ns-fade-in 0.25s ease-out both; }
+.animate-ns-history { animation: ns-history-in 0.32s cubic-bezier(0.22, 1, 0.36, 1); }
+
+/* ═══════════════════════════════════════════════════════════════
+   ۴) BASE LAYER
+═══════════════════════════════════════════════════════════════ */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #1f2937;
+    --card: #ffffff;
+    --card-foreground: #1f2937;
+    --popover: #ffffff;
+    --popover-foreground: #1f2937;
+    --primary: #43abff;
+    --primary-foreground: #ffffff;
+    --secondary: #f8fafc;
+    --secondary-foreground: #1f2937;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --accent: #f1f5f9;
+    --accent-foreground: #1f2937;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border: #e5e7eb;
+    --input: #e5e7eb;
+    --ring: #43abff;
+    --radius: 0.75rem;
+  }
+
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+  }
+
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    font-size: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+  }
+
+  html[dir="rtl"] body { direction: rtl; text-align: right; }
+  html[dir="ltr"] body { direction: ltr; text-align: left; }
+
+  /* ✅ دسترس‌پذیری: حلقه فوکوس یکنواخت برای ناوبری کیبورد */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  /* ═══ Leaflet را مجبور به فونت برند کن ═══ */
+  .leaflet-container,
+  .leaflet-container *,
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-content,
+  .leaflet-tooltip,
+  .leaflet-control,
+  .leaflet-control-zoom a {
+    font-family: "IRANSansX", Tahoma, sans-serif !important;
+  }
+
+  /* ─── Typography ─── */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-strong);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+  }
+  h1 { font-size: clamp(2.25rem, 1.8rem + 2.2vw, 3rem); }
+  h2 { font-size: clamp(1.875rem, 1.6rem + 1.5vw, 2.25rem); }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1.125rem; }
+  h6 { font-size: 1rem; }
+  small { font-size: 0.875rem; }
+  p { margin-bottom: 1rem; }
+
+  a {
+    color: var(--foreground);
+    text-decoration: none;
+    transition: color 0.25s;
+  }
+  a:hover { color: var(--color-primary); }
+
+  ::selection { background: rgba(67, 171, 255, 0.2); }
+
+  /* ─── Scrollbar سفارشی ─── */
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.04); }
+  *::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+    background-clip: content-box;
+  }
+
+  /* ─── دکمه‌های قابل کلیک ─── */
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary {
+    cursor: pointer;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ═══════════════════════════════════════════════════════════════
+   ۵) UTILITIES
+═══════════════════════════════════════════════════════════════ */
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+
+  /* ✅ خوانایی موبایل: کف مطلق ۱۱px — هیچ متنی ریزتر از این نمی‌مونه */
+  @media (max-width: 640px) {
+    .text-\[8px\],
+    .text-\[8\.5px\],
+    .text-\[9px\],
+    .text-\[10px\] {
+      font-size: 11px !important;
+    }
+  }
+
+  /* ✅ دسترس‌پذیری: احترام به prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ۶) COMPONENTS
+═══════════════════════════════════════════════════════════════ */
+@layer components {
+  /* ─── Container واحد + گاتر واکنش‌گرا (۱۶/۲۴/۳۲) ── */
+  .ns-container {
+    width: 100%;
+    max-width: var(--container-2xl);
+    margin-inline: auto;
+  }
+  @media (max-width: 768px) {
+    .ns-container { padding-inline: 1rem; }
+  }
+
+
+  /* ═══ CARD ═══ */
+  .ns-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: all 0.25s ease;
+  }
+  .ns-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+  }
+  .ns-card-body { padding: 1.25rem; }
+
+  /* ═══ پنل کاربری: کارت‌ها بدون افکت هاور (ثابت) ═══ */
+  .ns-account .ns-card,
+  .ns-account .ns-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* ═══ BUTTONS ═══ */
+  .ns-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    white-space: nowrap;
+  }
+  .ns-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .ns-btn-primary { background: var(--color-primary); color: white; }
+  .ns-btn-primary:hover:not(:disabled) {
+    background: var(--color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(67, 171, 255, 0.3);
+  }
+  .ns-btn-primary:active:not(:disabled) { transform: translateY(0); }
+  .ns-btn-outline {
+    background: white;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+  .ns-btn-outline:hover:not(:disabled) { background: var(--color-primary-lightest); }
+  .ns-btn-ghost { background: transparent; color: var(--color-text); }
+  .ns-btn-ghost:hover:not(:disabled) { background: var(--color-surface); }
+  .ns-btn-sm { padding: 0.5rem 1rem; font-size: 0.8125rem; }
+  .ns-btn-lg { padding: 1rem 2rem; font-size: 1rem; }
+
+  /* ═══ INPUTS ═══ */
+  .ns-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: white;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  .ns-input::placeholder { color: var(--color-text-subtle); }
+  .ns-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(67, 171, 255, 0.15);
+  }
+  .ns-input:disabled {
+    background: var(--color-surface);
+    color: var(--color-text-subtle);
+    cursor: not-allowed;
+  }
+  .ns-textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: white;
+    font-size: 0.875rem;
+    outline: none;
+    resize: vertical;
+    min-height: 100px;
+    transition: all 0.2s ease;
+  }
+  .ns-textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(67, 171, 255, 0.15);
+  }
+
+  /* ═══ CHIPS & BADGES ═══ */
+  .ns-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    background: white;
+    border: 1px solid var(--color-border);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .ns-chip:hover { border-color: var(--color-primary); color: var(--color-primary-dark); }
+  .ns-chip-active { background: var(--color-primary); border-color: var(--color-primary); color: white; }
+
+  .ns-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-xs);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  .ns-badge-primary { background: var(--color-primary-lightest); color: var(--color-primary-dark); }
+  .ns-badge-success { background: #ecfdf5; color: #065f46; }
+  .ns-badge-warning { background: #fffbeb; color: #92400e; }
+  .ns-badge-danger { background: #fef2f2; color: #991b1b; }
+
+  /* ═══ DIVIDER ═══ */
+  .ns-divider { border: none; border-top: 1px solid var(--color-divider); margin: 1rem 0; }
+
+  /* ═══ SECTION TITLE ═══ */
+  .ns-section-title {
+    @apply text-lg md:text-xl font-extrabold text-text-strong leading-tight;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-strong);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-inline-start: 1rem;
+  }
+  .ns-section-title::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0.25rem;
+    width: 0.3rem;
+    height: 1.5rem;
+    border-radius: 999px;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-dark));
+  }
+
+  /* ═══ Footer Helpers ═══ */
+  .sfp3-head {
+    position: relative;
+    padding-inline-start: 1rem;
+    color: var(--color-text-strong);
+    font-weight: 800;
+  }
+  .sfp3-head::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0.15rem;
+    width: 0.3rem;
+    height: 1.1rem;
+    border-radius: 4px;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-dark));
+    box-shadow: 0 4px 10px rgba(67, 171, 255, 0.15);
+  }
+
+  /* ═══ اسکرول‌بار نازک برای لیست تب‌ها ═══ */
+  .ns-tablist-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary-light) transparent;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+  .ns-tablist-scroll::-webkit-scrollbar { height: 6px; }
+  .ns-tablist-scroll::-webkit-scrollbar-track { background: transparent; }
+  .ns-tablist-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+    border-radius: 999px;
+  }
+  .ns-tablist-scroll::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ۷) تقویم سفارشی (CalendarPanel)
+═══════════════════════════════════════════════════════════════ */
+.calendar-panel { font-family: var(--font-sans); }
+.calendar-day-disabled {
+  opacity: 0.35;
+  text-decoration: line-through;
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+.calendar-day-selected {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(67, 171, 255, 0.3);
+}
+.calendar-day-in-range {
+  background-color: var(--color-primary-lightest);
+  color: var(--color-primary-dark);
+}
+.calendar-day-today {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ۸) کاروسل لبه‌به‌لبه با snap روی گاتر
+═══════════════════════════════════════════════════════════════ */
+.ns-bleed-x {
+  margin-inline: -1rem;
+  padding-inline: 1rem;
+  scroll-padding-inline: 1rem;
+}
+@media (min-width: 768px) {
+  .ns-bleed-x {
+    margin-inline: 0;
+    padding-inline: 0;
+    scroll-padding-inline: 0;
+  }
 }

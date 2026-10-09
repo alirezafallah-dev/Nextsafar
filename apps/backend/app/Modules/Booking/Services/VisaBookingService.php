@@ -39,10 +39,21 @@ class VisaBookingService
             ];
         }
 
-        // 2. محاسبه قیمت کل
+        // 2. دریافت قیمت از وردپرس (با fallback)
         $pricePerPerson = (float) ($visaData['price'] ?? 0);
-        $passengerCount = count($data['passengers'] ?? []);
+        
+        // اگر قیمت از وردپرس نخوانده شد، مقدار پیش‌فرض
+        if ($pricePerPerson <= 0) {
+            $pricePerPerson = 5000000; // 5 میلیون تومان پیش‌فرض
+            Log::warning('Visa price is 0 or missing, using default price', [
+                'visa_slug' => $data['visa_slug'],
+                'default_price' => $pricePerPerson,
+                'visa_data' => $visaData,
+            ]);
+        }
 
+        // 3. بررسی حداقل یک مسافر
+        $passengerCount = count($data['passengers'] ?? []);
         if ($passengerCount === 0) {
             return [
                 'success' => false,
@@ -51,23 +62,23 @@ class VisaBookingService
             ];
         }
 
-        // محاسبه قیمت بر اساس نوع مسافر
+        // 4. محاسبه قیمت کل بر اساس نوع مسافر
         $totalAmount = 0;
         foreach ($data['passengers'] as $passenger) {
             $type = PassengerType::from($passenger['passenger_type'] ?? 'adult');
             $totalAmount += $pricePerPerson * $type->priceMultiplier();
         }
 
-        // 3. ساخت رزرو در تراکنش
+        // 5. ساخت رزرو در تراکنش
         try {
-            $result = DB::transaction(function () use ($user, $visaData, $data, $totalAmount, $passengerCount) {
+            $result = DB::transaction(function () use ($user, $visaData, $data, $totalAmount, $passengerCount, $pricePerPerson) {
                 // ساخت Booking
                 $booking = Booking::create([
                     'user_id' => $user->id,
                     'booking_type' => BookingType::VISA,
                     'item_source' => 'wordpress',
-                    'item_id' => (string) $visaData['id'],
-                    'item_title' => $visaData['title'],
+                    'item_id' => (string) ($visaData['id'] ?? ''),
+                    'item_title' => $visaData['title'] ?? 'ویزا',
                     'status' => BookingStatus::PENDING,
                     'total_amount' => $totalAmount,
                     'currency' => $visaData['currency'] ?? 'IRR',
@@ -75,15 +86,18 @@ class VisaBookingService
                     'booking_data' => [
                         'visa_slug' => $data['visa_slug'],
                         'country' => $visaData['country'] ?? null,
+                        'country_code' => $visaData['country_code'] ?? null,
                         'visa_type' => $visaData['visa_type'] ?? 'tourist',
+                        'price_per_person' => $pricePerPerson,
+                        'currency' => $visaData['currency'] ?? 'IRR',
                     ],
                 ]);
 
                 // ساخت VisaBooking details
                 VisaBooking::create([
                     'booking_id' => $booking->id,
-                    'wordpress_post_id' => $visaData['id'],
-                    'visa_title' => $visaData['title'],
+                    'wordpress_post_id' => (int) ($visaData['id'] ?? 0),
+                    'visa_title' => $visaData['title'] ?? '',
                     'visa_slug' => $data['visa_slug'],
                     'visa_type' => $visaData['visa_type'] ?? 'tourist',
                     'country' => $visaData['country'] ?? '',
@@ -124,6 +138,7 @@ class VisaBookingService
                 'error' => $e->getMessage(),
                 'user_id' => $user->id,
                 'visa_slug' => $data['visa_slug'] ?? null,
+                'trace' => $e->getTraceAsString(),
             ]);
 
             return [

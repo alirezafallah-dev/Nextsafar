@@ -1,0 +1,746 @@
+[
+  {
+    "iata": "IKA",
+    "name_fa": "فرودگاه بین‌المللی امام خمینی",
+    "city_fa": "تهران",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "THR",
+    "name_fa": "فرودگاه مهرآباد",
+    "city_fa": "تهران",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "MHD",
+    "name_fa": "فرودگاه شهید هاشمی‌نژاد",
+    "city_fa": "مشهد",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "SYZ",
+    "name_fa": "فرودگاه شهید دستغیب",
+    "city_fa": "شیراز",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "IFN",
+    "name_fa": "فرودگاه شهید بهشتی",
+    "city_fa": "اصفهان",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "TBZ",
+    "name_fa": "فرودگاه شهید مدنی",
+    "city_fa": "تبریز",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "KIH",
+    "name_fa": "فرودگاه کیش",
+    "city_fa": "کیش",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "AWZ",
+    "name_fa": "فرودگاه اهواز",
+    "city_fa": "اهواز",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "BND",
+    "name_fa": "فرودگاه بندرعباس",
+    "city_fa": "بندرعباس",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "RAS",
+    "name_fa": "فرودگاه سردار جنگل",
+    "city_fa": "رشت",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "GSM",
+    "name_fa": "فرودگاه قشم",
+    "city_fa": "قشم",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "KER",
+    "name_fa": "فرودگاه کرمان",
+    "city_fa": "کرمان",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "ZBR",
+    "name_fa": "فرودگاه چابهار",
+    "city_fa": "چابهار",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "YAZ",
+    "name_fa": "فرودگاه یزد",
+    "city_fa": "یزد",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "KSH",
+    "name_fa": "فرودگاه کرمانشاه",
+    "city_fa": "کرمانشاه",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "OMH",
+    "name_fa": "فرودگاه ارومیه",
+    "city_fa": "ارومیه",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "ADU",
+    "name_fa": "فرودگاه اردبیل",
+    "city_fa": "اردبیل",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "HDM",
+    "name_fa": "فرودگاه همدان",
+    "city_fa": "همدان",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "SRY",
+    "name_fa": "فرودگاه ساری",
+    "city_fa": "ساری",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "NSH",
+    "name_fa": "فرودگاه نوشهر",
+    "city_fa": "نوشهر",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "RZR",
+    "name_fa": "فرودگاه رامسر",
+    "city_fa": "رامسر",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "GBT",
+    "name_fa": "فرودگاه گرگان",
+    "city_fa": "گرگان",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "XBJ",
+    "name_fa": "فرودگاه بیرجند",
+    "city_fa": "بیرجند",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "ZAH",
+    "name_fa": "فرودگاه زاهدان",
+    "city_fa": "زاهدان",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "BUZ",
+    "name_fa": "فرودگاه بوشهر",
+    "city_fa": "بوشهر",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "AFZ",
+    "name_fa": "فرودگاه سبزوار",
+    "city_fa": "سبزوار",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "RJN",
+    "name_fa": "فرودگاه رفسنجان",
+    "city_fa": "رفسنجان",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "LRR",
+    "name_fa": "فرودگاه لار",
+    "city_fa": "لار",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "KHD",
+    "name_fa": "فرودگاه خرم‌آباد",
+    "city_fa": "خرم‌آباد",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "IIL",
+    "name_fa": "فرودگاه ایلام",
+    "city_fa": "ایلام",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "BXR",
+    "name_fa": "فرودگاه بم",
+    "city_fa": "بم",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "JYR",
+    "name_fa": "فرودگاه جیرفت",
+    "city_fa": "جیرفت",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "TCX",
+    "name_fa": "فرودگاه طبس",
+    "city_fa": "طبس",
+    "country_fa": "ایران"
+  },
+  {
+    "iata": "IST",
+    "name_fa": "فرودگاه استانبول",
+    "city_fa": "استانبول",
+    "country_fa": "ترکیه"
+  },
+  {
+    "iata": "SAW",
+    "name_fa": "فرودگاه صبیحه گوکچن",
+    "city_fa": "استانبول",
+    "country_fa": "ترکیه"
+  },
+  {
+    "iata": "ESB",
+    "name_fa": "فرودگاه اسن‌بوغا",
+    "city_fa": "آنکارا",
+    "country_fa": "ترکیه"
+  },
+  {
+    "iata": "AYT",
+    "name_fa": "فرودگاه آنتالیا",
+    "city_fa": "آنتالیا",
+    "country_fa": "ترکیه"
+  },
+  {
+    "iata": "ADB",
+    "name_fa": "فرودگاه عدنان مندرس",
+    "city_fa": "ازمیر",
+    "country_fa": "ترکیه"
+  },
+  {
+    "iata": "BJV",
+    "name_fa": "فرودگاه میلاس",
+    "city_fa": "بودروم",
+    "country_fa": "ترکیه"
+  },
+  {
+    "iata": "DLM",
+    "name_fa": "فرودگاه دالامان",
+    "city_fa": "دالامان",
+    "country_fa": "ترکیه"
+  },
+  {
+    "iata": "DXB",
+    "name_fa": "فرودگاه بین‌المللی دبی",
+    "city_fa": "دبی",
+    "country_fa": "امارات"
+  },
+  {
+    "iata": "DWC",
+    "name_fa": "فرودگاه آل مکتوم",
+    "city_fa": "دبی",
+    "country_fa": "امارات"
+  },
+  {
+    "iata": "AUH",
+    "name_fa": "فرودگاه ابوظبی",
+    "city_fa": "ابوظبی",
+    "country_fa": "امارات"
+  },
+  {
+    "iata": "SHJ",
+    "name_fa": "فرودگاه شارجه",
+    "city_fa": "شارجه",
+    "country_fa": "امارات"
+  },
+  {
+    "iata": "DOH",
+    "name_fa": "فرودگاه حمد",
+    "city_fa": "دوحه",
+    "country_fa": "قطر"
+  },
+  {
+    "iata": "BAH",
+    "name_fa": "فرودگاه بحرین",
+    "city_fa": "منامه",
+    "country_fa": "بحرین"
+  },
+  {
+    "iata": "KWI",
+    "name_fa": "فرودگاه کویت",
+    "city_fa": "کویت",
+    "country_fa": "کویت"
+  },
+  {
+    "iata": "MCT",
+    "name_fa": "فرودگاه مسقط",
+    "city_fa": "مسقط",
+    "country_fa": "عمان"
+  },
+  {
+    "iata": "SLL",
+    "name_fa": "فرودگاه صلاله",
+    "city_fa": "صلاله",
+    "country_fa": "عمان"
+  },
+  {
+    "iata": "AMM",
+    "name_fa": "فرودگاه علیا ملک",
+    "city_fa": "امان",
+    "country_fa": "اردن"
+  },
+  {
+    "iata": "BEY",
+    "name_fa": "فرودگاه رفیق حریری",
+    "city_fa": "بیروت",
+    "country_fa": "لبنان"
+  },
+  {
+    "iata": "BGW",
+    "name_fa": "فرودگاه بغداد",
+    "city_fa": "بغداد",
+    "country_fa": "عراق"
+  },
+  {
+    "iata": "NJF",
+    "name_fa": "فرودگاه نجف",
+    "city_fa": "نجف",
+    "country_fa": "عراق"
+  },
+  {
+    "iata": "BSR",
+    "name_fa": "فرودگاه بصره",
+    "city_fa": "بصره",
+    "country_fa": "عراق"
+  },
+  {
+    "iata": "ISU",
+    "name_fa": "فرودگاه سلیمانیه",
+    "city_fa": "سلیمانیه",
+    "country_fa": "عراق"
+  },
+  {
+    "iata": "EBL",
+    "name_fa": "فرودگاه اربیل",
+    "city_fa": "اربیل",
+    "country_fa": "عراق"
+  },
+  {
+    "iata": "TBS",
+    "name_fa": "فرودگاه تفلیس",
+    "city_fa": "تفلیس",
+    "country_fa": "گرجستان"
+  },
+  {
+    "iata": "BUS",
+    "name_fa": "فرودگاه باتومی",
+    "city_fa": "باتومی",
+    "country_fa": "گرجستان"
+  },
+  {
+    "iata": "KUT",
+    "name_fa": "فرودگاه کوتایسی",
+    "city_fa": "کوتایسی",
+    "country_fa": "گرجستان"
+  },
+  {
+    "iata": "GYD",
+    "name_fa": "فرودگاه حیدر علی‌اف",
+    "city_fa": "باکو",
+    "country_fa": "آذربایجان"
+  },
+  {
+    "iata": "EVN",
+    "name_fa": "فرودگاه زوارتنوتس",
+    "city_fa": "ایروان",
+    "country_fa": "ارمنستان"
+  },
+  {
+    "iata": "SVO",
+    "name_fa": "فرودگاه شرمتیوو",
+    "city_fa": "مسکو",
+    "country_fa": "روسیه"
+  },
+  {
+    "iata": "VKO",
+    "name_fa": "فرودگاه ونوکووا",
+    "city_fa": "مسکو",
+    "country_fa": "روسیه"
+  },
+  {
+    "iata": "DME",
+    "name_fa": "فرودگاه دوموددوا",
+    "city_fa": "مسکو",
+    "country_fa": "روسیه"
+  },
+  {
+    "iata": "LED",
+    "name_fa": "فرودگاه پولکووا",
+    "city_fa": "سن‌پترزبورگ",
+    "country_fa": "روسیه"
+  },
+  {
+    "iata": "AER",
+    "name_fa": "فرودگاه سوچی",
+    "city_fa": "سوچی",
+    "country_fa": "روسیه"
+  },
+  {
+    "iata": "LHR",
+    "name_fa": "فرودگاه هیثرو",
+    "city_fa": "لندن",
+    "country_fa": "انگلستان"
+  },
+  {
+    "iata": "LGW",
+    "name_fa": "فرودگاه گاتویک",
+    "city_fa": "لندن",
+    "country_fa": "انگلستان"
+  },
+  {
+    "iata": "STN",
+    "name_fa": "فرودگاه استانستد",
+    "city_fa": "لندن",
+    "country_fa": "انگلستان"
+  },
+  {
+    "iata": "MAN",
+    "name_fa": "فرودگاه منچستر",
+    "city_fa": "منچستر",
+    "country_fa": "انگلستان"
+  },
+  {
+    "iata": "CDG",
+    "name_fa": "فرودگاه شارل دوگل",
+    "city_fa": "پاریس",
+    "country_fa": "فرانسه"
+  },
+  {
+    "iata": "ORY",
+    "name_fa": "فرودگاه اورلی",
+    "city_fa": "پاریس",
+    "country_fa": "فرانسه"
+  },
+  {
+    "iata": "FRA",
+    "name_fa": "فرودگاه فرانکفورت",
+    "city_fa": "فرانکفورت",
+    "country_fa": "آلمان"
+  },
+  {
+    "iata": "MUC",
+    "name_fa": "فرودگاه مونیخ",
+    "city_fa": "مونیخ",
+    "country_fa": "آلمان"
+  },
+  {
+    "iata": "TXL",
+    "name_fa": "فرودگاه برلین",
+    "city_fa": "برلین",
+    "country_fa": "آلمان"
+  },
+  {
+    "iata": "DUS",
+    "name_fa": "فرودگاه دوسلدورف",
+    "city_fa": "دوسلدورف",
+    "country_fa": "آلمان"
+  },
+  {
+    "iata": "HAM",
+    "name_fa": "فرودگاه هامبورگ",
+    "city_fa": "هامبورگ",
+    "country_fa": "آلمان"
+  },
+  {
+    "iata": "AMS",
+    "name_fa": "فرودگاه اسخیپول",
+    "city_fa": "آمستردام",
+    "country_fa": "هلند"
+  },
+  {
+    "iata": "FCO",
+    "name_fa": "فرودگاه فیومیچینو",
+    "city_fa": "رم",
+    "country_fa": "ایتالیا"
+  },
+  {
+    "iata": "MXP",
+    "name_fa": "فرودگاه مالپنسا",
+    "city_fa": "میلان",
+    "country_fa": "ایتالیا"
+  },
+  {
+    "iata": "VCE",
+    "name_fa": "فرودگاه مارکو پولو",
+    "city_fa": "ونیز",
+    "country_fa": "ایتالیا"
+  },
+  {
+    "iata": "BCN",
+    "name_fa": "فرودگاه ال پرات",
+    "city_fa": "بارسلون",
+    "country_fa": "اسپانیا"
+  },
+  {
+    "iata": "MAD",
+    "name_fa": "فرودگاه باراخاس",
+    "city_fa": "مادرید",
+    "country_fa": "اسپانیا"
+  },
+  {
+    "iata": "VIE",
+    "name_fa": "فرودگاه شوخات",
+    "city_fa": "وین",
+    "country_fa": "اتریش"
+  },
+  {
+    "iata": "ZRH",
+    "name_fa": "فرودگاه زوریخ",
+    "city_fa": "زوریخ",
+    "country_fa": "سوئیس"
+  },
+  {
+    "iata": "GVA",
+    "name_fa": "فرودگاه ژنو",
+    "city_fa": "ژنو",
+    "country_fa": "سوئیس"
+  },
+  {
+    "iata": "ATH",
+    "name_fa": "فرودگاه آتن",
+    "city_fa": "آتن",
+    "country_fa": "یونان"
+  },
+  {
+    "iata": "HER",
+    "name_fa": "فرودگاه هراکلیون",
+    "city_fa": "هراکلیون",
+    "country_fa": "یونان"
+  },
+  {
+    "iata": "RHO",
+    "name_fa": "فرودگاه رودس",
+    "city_fa": "رودس",
+    "country_fa": "یونان"
+  },
+  {
+    "iata": "PRG",
+    "name_fa": "فرودگاه واتسلاو هاول",
+    "city_fa": "پراگ",
+    "country_fa": "چک"
+  },
+  {
+    "iata": "BUD",
+    "name_fa": "فرودگاه فرنتس لیست",
+    "city_fa": "بوداپست",
+    "country_fa": "مجارستان"
+  },
+  {
+    "iata": "WAW",
+    "name_fa": "فرودگاه شوپن",
+    "city_fa": "ورشو",
+    "country_fa": "لهستان"
+  },
+  {
+    "iata": "ARN",
+    "name_fa": "فرودگاه آرلاندا",
+    "city_fa": "استکهلم",
+    "country_fa": "سوئد"
+  },
+  {
+    "iata": "OSL",
+    "name_fa": "فرودگاه گاردرموئن",
+    "city_fa": "اسلو",
+    "country_fa": "نروژ"
+  },
+  {
+    "iata": "CPH",
+    "name_fa": "فرودگاه کاستروپ",
+    "city_fa": "کپنهاگ",
+    "country_fa": "دانمارک"
+  },
+  {
+    "iata": "HEL",
+    "name_fa": "فرودگاه وانتا",
+    "city_fa": "هلسینکی",
+    "country_fa": "فنلاند"
+  },
+  {
+    "iata": "JFK",
+    "name_fa": "فرودگاه جان اف کندی",
+    "city_fa": "نیویورک",
+    "country_fa": "آمریکا"
+  },
+  {
+    "iata": "EWR",
+    "name_fa": "فرودگاه نیوآرک",
+    "city_fa": "نیویورک",
+    "country_fa": "آمریکا"
+  },
+  {
+    "iata": "LAX",
+    "name_fa": "فرودگاه لس‌آنجلس",
+    "city_fa": "لس‌آنجلس",
+    "country_fa": "آمریکا"
+  },
+  {
+    "iata": "ORD",
+    "name_fa": "فرودگاه اوهاره",
+    "city_fa": "شیکاگو",
+    "country_fa": "آمریکا"
+  },
+  {
+    "iata": "MIA",
+    "name_fa": "فرودگاه میامی",
+    "city_fa": "میامی",
+    "country_fa": "آمریکا"
+  },
+  {
+    "iata": "SFO",
+    "name_fa": "فرودگاه سانفرانسیسکو",
+    "city_fa": "سانفرانسیسکو",
+    "country_fa": "آمریکا"
+  },
+  {
+    "iata": "YYZ",
+    "name_fa": "فرودگاه پیرسون",
+    "city_fa": "تورنتو",
+    "country_fa": "کانادا"
+  },
+  {
+    "iata": "YVR",
+    "name_fa": "فرودگاه ونکوور",
+    "city_fa": "ونکوور",
+    "country_fa": "کانادا"
+  },
+  {
+    "iata": "YUL",
+    "name_fa": "فرودگاه مونترآل",
+    "city_fa": "مونترآل",
+    "country_fa": "کانادا"
+  },
+  {
+    "iata": "PEK",
+    "name_fa": "فرودگاه پکن",
+    "city_fa": "پکن",
+    "country_fa": "چین"
+  },
+  {
+    "iata": "PVG",
+    "name_fa": "فرودگاه پودونگ",
+    "city_fa": "شانگهای",
+    "country_fa": "چین"
+  },
+  {
+    "iata": "CAN",
+    "name_fa": "فرودگاه گوانگژو",
+    "city_fa": "گوانگژو",
+    "country_fa": "چین"
+  },
+  {
+    "iata": "HKG",
+    "name_fa": "فرودگاه هنگ‌کنگ",
+    "city_fa": "هنگ‌کنگ",
+    "country_fa": "چین"
+  },
+  {
+    "iata": "NRT",
+    "name_fa": "فرودگاه ناریتا",
+    "city_fa": "توکیو",
+    "country_fa": "ژاپن"
+  },
+  {
+    "iata": "HND",
+    "name_fa": "فرودگاه هاندا",
+    "city_fa": "توکیو",
+    "country_fa": "ژاپن"
+  },
+  {
+    "iata": "KIX",
+    "name_fa": "فرودگاه کانزای",
+    "city_fa": "اوزاکا",
+    "country_fa": "ژاپن"
+  },
+  {
+    "iata": "ICN",
+    "name_fa": "فرودگاه اینچئون",
+    "city_fa": "سئول",
+    "country_fa": "کره جنوبی"
+  },
+  {
+    "iata": "BKK",
+    "name_fa": "فرودگاه سووارنابومی",
+    "city_fa": "بانکوک",
+    "country_fa": "تایلند"
+  },
+  {
+    "iata": "DMK",
+    "name_fa": "فرودگاه دون‌موئانگ",
+    "city_fa": "بانکوک",
+    "country_fa": "تایلند"
+  },
+  {
+    "iata": "HKT",
+    "name_fa": "فرودگاه پوکت",
+    "city_fa": "پوکت",
+    "country_fa": "تایلند"
+  },
+  {
+    "iata": "SIN",
+    "name_fa": "فرودگاه چانگی",
+    "city_fa": "سنگاپور",
+    "country_fa": "سنگاپور"
+  },
+  {
+    "iata": "KUL",
+    "name_fa": "فرودگاه کوالالامپور",
+    "city_fa": "کوالالامپور",
+    "country_fa": "مالزی"
+  },
+  {
+    "iata": "DEL",
+    "name_fa": "فرودگاه دهلی",
+    "city_fa": "دهلی",
+    "country_fa": "هند"
+  },
+  {
+    "iata": "BOM",
+    "name_fa": "فرودگاه بمبئی",
+    "city_fa": "بمبئی",
+    "country_fa": "هند"
+  },
+  {
+    "iata": "JED",
+    "name_fa": "فرودگاه جده",
+    "city_fa": "جده",
+    "country_fa": "عربستان"
+  },
+  {
+    "iata": "RUH",
+    "name_fa": "فرودگاه ریاض",
+    "city_fa": "ریاض",
+    "country_fa": "عربستان"
+  },
+  {
+    "iata": "MED",
+    "name_fa": "فرودگاه مدینه",
+    "city_fa": "مدینه",
+    "country_fa": "عربستان"
+  },
+  {
+    "iata": "DXB",
+    "name_fa": "فرودگاه دبی",
+    "city_fa": "دبی",
+    "country_fa": "امارات"
+  }
+]

@@ -14,7 +14,6 @@ use Illuminate\Support\Str;
  */
 class DocumentUploadService
 {
-    // انواع مجاز مدارک
     public const ALLOWED_TYPES = [
         'passport' => 'اسکن پاسپورت',
         'national_id' => 'کارت ملی',
@@ -30,7 +29,6 @@ class DocumentUploadService
         'other' => 'سایر',
     ];
 
-    // MIME types مجاز
     public const ALLOWED_MIME_TYPES = [
         'image/jpeg',
         'image/jpg',
@@ -38,7 +36,6 @@ class DocumentUploadService
         'application/pdf',
     ];
 
-    // حداکثر حجم فایل (10 مگابایت)
     public const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 
     /**
@@ -65,7 +62,7 @@ class DocumentUploadService
             return [
                 'success' => false,
                 'error' => 'invalid_file_type',
-                'message' => 'فقط فایل‌های JPG، PNG و PDF مجاز هستند',
+                'message' => 'فقط فایل‌های JPG، PNG و PDF مجاز هستند. MIME: ' . $file->getMimeType(),
             ];
         }
 
@@ -105,6 +102,9 @@ class DocumentUploadService
             // URL فایل
             $fileUrl = Storage::disk('public')->url($filePath);
 
+            // ✅ رفع مشکل: صریحاً uploaded_at را ست می‌کنیم
+            $uploadedAt = now();
+
             // ذخیره در دیتابیس
             $document = BookingDocument::create([
                 'booking_id' => $booking->id,
@@ -117,6 +117,7 @@ class DocumentUploadService
                 'mime_type' => $file->getMimeType(),
                 'file_size' => $file->getSize(),
                 'status' => 'uploaded',
+                'uploaded_at' => $uploadedAt, // ✅ این خط مشکل را حل می‌کند
             ]);
 
             return [
@@ -131,7 +132,7 @@ class DocumentUploadService
                     'mime_type' => $document->mime_type,
                     'size' => $document->readable_size,
                     'status' => $document->status,
-                    'uploaded_at' => $document->uploaded_at->toIso8601String(),
+                    'uploaded_at' => $uploadedAt->toIso8601String(),
                 ],
             ];
 
@@ -149,7 +150,6 @@ class DocumentUploadService
      */
     public function delete(BookingDocument $document, Booking $booking): array
     {
-        // بررسی مالکیت
         if ($document->booking_id !== $booking->id) {
             return [
                 'success' => false,
@@ -159,12 +159,10 @@ class DocumentUploadService
         }
 
         try {
-            // حذف فایل از storage
             if (Storage::disk('public')->exists($document->file_path)) {
                 Storage::disk('public')->delete($document->file_path);
             }
 
-            // حذف از دیتابیس
             $document->delete();
 
             return [
@@ -209,7 +207,7 @@ class DocumentUploadService
                         'id' => $doc->passenger->id,
                         'name' => $doc->passenger->full_name,
                     ] : null,
-                    'uploaded_at' => $doc->uploaded_at->toIso8601String(),
+                    'uploaded_at' => $doc->uploaded_at?->toIso8601String(),
                 ];
             })->toArray(),
             'count' => $documents->count(),

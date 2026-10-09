@@ -11,11 +11,11 @@ use Illuminate\Support\Facades\Cache;
  */
 class VisaService
 {
-    private const POST_TYPE = 'visas'; // rest_base پست تایپ ویزا
-    private const CACHE_PREFIX = 'visas:';
+    private const POST_TYPE = 'visa';
+    private const CACHE_PREFIX = 'visa:';
 
     public function __construct(
-        private WordPressClient $client
+        private \App\Modules\WordPress\Services\WordPressClient $client
     ) {}
 
     /**
@@ -32,17 +32,14 @@ class VisaService
                 '_embed' => 1,
             ];
 
-            // فیلتر بر اساس کشور
             if (!empty($filters['country'])) {
                 $params['visa_country'] = $filters['country'];
             }
 
-            // جستجو
             if (!empty($filters['search'])) {
                 $params['search'] = $filters['search'];
             }
 
-            // مرتب‌سازی
             if (!empty($filters['orderby'])) {
                 $params['orderby'] = $filters['orderby'];
                 $params['order'] = $filters['order'] ?? 'desc';
@@ -120,7 +117,7 @@ class VisaService
     }
 
     /**
-     * ویزاهای محبوب (برای صفحه اصلی)
+     * ویزاهای محبوب
      */
     public function getPopularVisas(int $limit = 8): array
     {

@@ -1,69 +1,156 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import HomeHero from "@/components/home/HomeHero";
+import StatsBar from "@/components/home/StatsBar";
+import DestinationStories from "@/components/home/DestinationStories";
+import TrendingNow from "@/components/home/TrendingNow";
+import FeaturedHotels from "@/components/home/FeaturedHotels";
+import AiTripBanner from "@/components/home/AiTripBanner";
+import CollectionsSection from "@/components/home/CollectionsSection";
+import VisaSection from "@/components/home/VisaSection";
+import MagazineSection from "@/components/home/MagazineSection";
+import LeadCaptureBand from "@/components/home/LeadCaptureBand";
+import TrustSection from "@/components/home/TrustSection";
 
-export default function Home() {
+/* ═══ آدرس پایه سایت ═══ */
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://nextsafar.com";
+
+/* ═══════════════════════════════════════════════════════
+   ✅ سئوی صفحه اصلی: متا + Open Graph + Twitter
+═══════════════════════════════════════════════════════ */
+export const metadata: Metadata = {
+  title: {
+    absolute: "سفر بعدی | رزرو پرواز، هتل، تور و ویزا با دستیار هوشمند سفر",
+  },
+  description:
+    "سفر بعدی ایرانیان؛ رزرو آنی پرواز، هتل و تور، خدمات ویزا و راهنمای سفر مقاصد پرطرفدار، همراه با برنامه‌ریز هوشمند سفر با هوش مصنوعی. پشتیبانی ۲۴/۷ و پرداخت امن.",
+  keywords: [
+    "رزرو هتل",
+    "بلیط پرواز",
+    "تور مسافرتی",
+    "ویزا",
+    "راهنمای سفر",
+    "برنامه ریزی سفر با هوش مصنوعی",
+  ],
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    type: "website",
+    locale: "fa_IR",
+    url: SITE_URL,
+    siteName: "سفر بعدی",
+    title: "سفر بعدی | رزرو پرواز، هتل، تور و ویزا",
+    description:
+      "رزرو آنی پرواز، هتل و تور + برنامه‌ریز هوشمند سفر با AI؛ همراه با راهنمای سفر و خدمات ویزا.",
+    images: [
+      {
+        url: `${SITE_URL}/images/og-cover.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "سفر بعدی ایرانیان",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "سفر بعدی | رزرو پرواز، هتل، تور و ویزا",
+    description: "رزرو آنی پرواز، هتل و تور + برنامه‌ریز هوشمند سفر با AI.",
+  },
+  robots: { index: true, follow: true },
+};
+
+/* ═══════════════════════════════════════════════════════
+   ✅ JSON-LD: Organization + WebSite + SearchAction
+═══════════════════════════════════════════════════════ */
+import { HERO_TABS } from "@/lib/constants/hero-images";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "سفر بعدی ایرانیان",
+      alternateName: "Next Safar Iranian",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/images/logo.png`,
+        width: 150,
+        height: 50,
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+98-21-82801754",
+        contactType: "customer support",
+        areaServed: "IR",
+        availableLanguage: ["fa"],
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "تهران",
+        addressRegion: "تهران",
+        streetAddress: "صادقیه، فلکه اول، مجتمع تجاری گلدیس",
+        addressCountry: "IR",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: "سفر بعدی",
+      inLanguage: "fa-IR",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      {/* ✅ preload تصویر LCP فقط برای دسکتاپ (موبایل هیرو تصویر نداره) */}
+      <link
+        rel="preload"
+        as="image"
+        href={HERO_TABS.flight.images[0]}
+        media="(min-width: 768px)"
+        fetchPriority="high"
+      />
+      
+      {/* ✅ داده ساختاریافته برای گوگل */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      {/* سکشن ۱: هیرو + جستجو */}
+      <HomeHero />
+      {/* سکشن ۲: نوار آمار زنده */}
+      <StatsBar />
+      {/* سکشن ۳: استوری مقاصد */}
+      <DestinationStories />
+      {/* سکشن ۴: داغ‌ترین‌ها */}
+      <TrendingNow />
+      {/* سکشن ۵: هتل‌های برگزیده */}
+      <FeaturedHotels />
+      {/* سکشن ۷: بنر AI Trip Planner */}
+      <AiTripBanner />
+      {/* سکشن ۹: شهرهای پرطرفدار */}
+      <CollectionsSection />
+      {/* سکشن ۸: خدمات ویزا */}
+      <VisaSection />
+      {/* سکشن ۱۲: مجله + اخبار */}
+      <MagazineSection />
+      {/* ✅ بند Lead-Capture: هشدار کاهش قیمت */}
+      <LeadCaptureBand />
+      {/* سکشن ۱۳: اعتماد + مجوزها */}
+      <TrustSection />
+    </>
   );
 }
