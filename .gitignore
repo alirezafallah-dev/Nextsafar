@@ -114,3 +114,4 @@ Thumbs.db
 
 # WordPress Uploads (اضافه شد)
 apps/cms/wp-content/uploads/
+apps/backend/app/Models/User.php.backup
