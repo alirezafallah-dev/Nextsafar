@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -67,20 +66,10 @@ class User extends Authenticatable
     {
         return $this->google_id !== null;
     }
+}
 
-    /**
-     * رزروهای کاربر
-     */
-    public function bookings(): HasMany
-    {
-        return $this->hasMany(\App\Modules\Booking\Models\Booking::class);
-    }
-
-    /**
-     * پرداخت‌های کاربر
-     */
-    public function payments(): HasMany
+    // اضافه کردن این متد قبل از آخرین }
+    public function payments()
     {
         return $this->hasMany(\App\Modules\Payment\Models\Payment::class);
     }
-}
