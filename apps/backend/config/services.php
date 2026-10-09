@@ -39,13 +39,11 @@ return [
         'url' => env('WORDPRESS_URL', 'http://cms.nextsafar.local'),
         'timeout' => env('WORDPRESS_TIMEOUT', 15),
         'cache_ttl' => env('WORDPRESS_CACHE_TTL', 3600),
-        'username' => env('WORDPRESS_USERNAME'),
-        'app_password' => env('WORDPRESS_APP_PASSWORD'),
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | NextSafar - Custom Services
+    | NextSafar - Authentication
     |--------------------------------------------------------------------------
     */
 
@@ -60,6 +58,12 @@ return [
         'redirect' => env('GOOGLE_REDIRECT_URI'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | NextSafar - Search Providers
+    |--------------------------------------------------------------------------
+    */
+
     'serpapi' => [
         'key' => env('SERPAPI_KEY', ''),
     ],
@@ -72,8 +76,26 @@ return [
         'primary_provider' => env('SEARCH_PRIMARY_PROVIDER', 'serpapi'),
     ],
 
-];
+    /*
+    |--------------------------------------------------------------------------
+    | NextSafar - Payment Gateways
+    |--------------------------------------------------------------------------
+    */
+
+    'zarinpal' => [
+        'merchant_id' => env('ZARINPAL_MERCHANT_ID', ''),
+        'sandbox' => env('ZARINPAL_SANDBOX', true),
+        'callback_url' => env('ZARINPAL_CALLBACK_URL', ''),
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | NextSafar - Exchange Rate API
+    |--------------------------------------------------------------------------
+    */
 
     'brsapi' => [
         'key' => env('BRAPI_KEY', ''),
     ],
+
+];
