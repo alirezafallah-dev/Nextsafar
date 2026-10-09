@@ -16,6 +16,7 @@ class VisaDTO extends WordPressPostDTO
         string $modified,
         string $status,
         array $meta = [],
+        // فیلدهای اصلی
         public readonly ?string $country = null,
         public readonly ?string $countryCode = null,
         public readonly ?string $visaType = null,
@@ -25,9 +26,13 @@ class VisaDTO extends WordPressPostDTO
         public readonly ?string $validityPeriod = null,
         public readonly array $requirements = [],
         public readonly array $documents = [],
+        // فیلدهای metabox
         public readonly ?string $issue = null,
         public readonly ?string $expiry = null,
         public readonly ?string $banner = null,
+        public readonly ?string $description = null,
+        // آرایه کامل قیمت‌ها
+        public readonly array $prices = [],
     ) {
         parent::__construct(
             $id, $title, $slug, $link, $content, $excerpt,
@@ -45,6 +50,13 @@ class VisaDTO extends WordPressPostDTO
         
         $fields = array_merge($meta, $acf, $visaInfo);
 
+        // پردازش آرایه قیمت‌ها
+        $prices = [];
+        if (isset($visaInfo['prices']) && is_array($visaInfo['prices'])) {
+            $prices = $visaInfo['prices'];
+        }
+
+        // محاسبه price_min
         $price = self::parsePrice(
             $fields['price_min'] ?? 
             $fields['price'] ?? 
@@ -76,6 +88,8 @@ class VisaDTO extends WordPressPostDTO
             issue: $fields['issue'] ?? null,
             expiry: $fields['expiry'] ?? null,
             banner: $fields['banner'] ?? null,
+            description: $fields['description'] ?? null,
+            prices: $prices,
         );
     }
 
@@ -95,7 +109,6 @@ class VisaDTO extends WordPressPostDTO
 
     /**
      * Parse list from string (supports UTF-8 Persian text)
-     * Splits by newline, comma (English/Persian)
      */
     private static function parseList(string|array $value): array
     {
@@ -107,7 +120,7 @@ class VisaDTO extends WordPressPostDTO
             return [];
         }
 
-        // ✅ روش ساده‌تر و امن‌تر: ابتدا explode بر اساس newline
+        // Split by newline first
         $lines = explode("\n", $value);
         
         $items = [];
@@ -117,7 +130,7 @@ class VisaDTO extends WordPressPostDTO
                 continue;
             }
             
-            // اگر خط شامل کاما بود، آن را هم split کن
+            // If line contains comma, split it too
             if (str_contains($line, ',') || str_contains($line, '،')) {
                 $parts = preg_split('/[,،]+/u', $line);
                 foreach ($parts as $part) {
@@ -149,6 +162,8 @@ class VisaDTO extends WordPressPostDTO
             'issue' => $this->issue,
             'expiry' => $this->expiry,
             'banner' => $this->banner,
+            'description' => $this->description,
+            'prices' => $this->prices,
         ]);
     }
 }

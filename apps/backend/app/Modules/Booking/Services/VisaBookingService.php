@@ -10,6 +10,7 @@ use App\Modules\Booking\Enums\VisaStatus;
 use App\Modules\Booking\Models\Booking;
 use App\Modules\Booking\Models\BookingPassenger;
 use App\Modules\Booking\Models\VisaBooking;
+use App\Modules\Payment\Services\ExchangeService;
 use App\Modules\WordPress\Services\VisaService;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -41,18 +42,32 @@ class VisaBookingService
 
         // 2. دریافت قیمت از وردپرس (با fallback)
         $pricePerPerson = (float) ($visaData['price'] ?? 0);
+        $currency = $visaData['currency'] ?? 'IRR';
         
-        // اگر قیمت از وردپرس نخوانده شد، مقدار پیش‌فرض
+        // اگر قیمت 0 باشد، مقدار پیش‌فرض
         if ($pricePerPerson <= 0) {
             $pricePerPerson = 5000000; // 5 میلیون تومان پیش‌فرض
+            $currency = 'IRR';
             Log::warning('Visa price is 0 or missing, using default price', [
                 'visa_slug' => $data['visa_slug'],
                 'default_price' => $pricePerPerson,
-                'visa_data' => $visaData,
             ]);
         }
 
-        // 3. بررسی حداقل یک مسافر
+        // 3. تبدیل به ریال (اگر ارز خارجی بود)
+        if ($currency !== 'IRR') {
+            $priceInRial = ExchangeService::convertToRial($pricePerPerson, $currency);
+            Log::info('Currency conversion', [
+                'original' => $pricePerPerson,
+                'currency' => $currency,
+                'rate' => ExchangeService::getRate($currency),
+                'in_rial' => $priceInRial,
+            ]);
+            $pricePerPerson = $priceInRial;
+            $currency = 'IRR';
+        }
+
+        // 4. بررسی حداقل یک مسافر
         $passengerCount = count($data['passengers'] ?? []);
         if ($passengerCount === 0) {
             return [
@@ -62,16 +77,16 @@ class VisaBookingService
             ];
         }
 
-        // 4. محاسبه قیمت کل بر اساس نوع مسافر
+        // 5. محاسبه قیمت کل بر اساس نوع مسافر
         $totalAmount = 0;
         foreach ($data['passengers'] as $passenger) {
             $type = PassengerType::from($passenger['passenger_type'] ?? 'adult');
             $totalAmount += $pricePerPerson * $type->priceMultiplier();
         }
 
-        // 5. ساخت رزرو در تراکنش
+        // 6. ساخت رزرو در تراکنش
         try {
-            $result = DB::transaction(function () use ($user, $visaData, $data, $totalAmount, $passengerCount, $pricePerPerson) {
+            $result = DB::transaction(function () use ($user, $visaData, $data, $totalAmount, $passengerCount, $pricePerPerson, $currency) {
                 // ساخت Booking
                 $booking = Booking::create([
                     'user_id' => $user->id,
@@ -81,7 +96,7 @@ class VisaBookingService
                     'item_title' => $visaData['title'] ?? 'ویزا',
                     'status' => BookingStatus::PENDING,
                     'total_amount' => $totalAmount,
-                    'currency' => $visaData['currency'] ?? 'IRR',
+                    'currency' => $currency,
                     'passenger_count' => $passengerCount,
                     'booking_data' => [
                         'visa_slug' => $data['visa_slug'],
@@ -89,7 +104,9 @@ class VisaBookingService
                         'country_code' => $visaData['country_code'] ?? null,
                         'visa_type' => $visaData['visa_type'] ?? 'tourist',
                         'price_per_person' => $pricePerPerson,
-                        'currency' => $visaData['currency'] ?? 'IRR',
+                        'currency' => $currency,
+                        'original_currency' => $visaData['currency'] ?? 'IRR',
+                        'exchange_rate' => ExchangeService::getRate($visaData['currency'] ?? 'IRR'),
                     ],
                 ]);
 
@@ -273,6 +290,8 @@ class VisaBookingService
                 'visa_type' => $visaInfo['visa_type'] ?? null,
                 'processing_days' => $visaInfo['processing_days'] ?? null,
                 'price' => $visaInfo['price'] ?? null,
+                'currency' => $visaInfo['currency'] ?? 'IRR',
+                'prices' => $visaInfo['prices'] ?? [],
             ] : null,
             'visa_details' => $booking->visaDetails ? [
                 'visa_status' => $booking->visaDetails->visa_status->value,

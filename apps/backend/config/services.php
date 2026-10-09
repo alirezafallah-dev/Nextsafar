@@ -73,3 +73,7 @@ return [
     ],
 
 ];
+
+    'brsapi' => [
+        'key' => env('BRAPI_KEY', ''),
+    ],
