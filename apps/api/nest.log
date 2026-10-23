@@ -5771,3 +5771,87 @@ Node.js v20.20.2
 
 [[90m2:51:53 PM[0m] Found 2 errors. Watching for file changes.
 
+[2J[3J[H[[90m3:23:20 PM[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.e2e.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[[90m3:23:20 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:27:13 PM[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.e2e.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[[90m3:27:13 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:19:05 PM[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.e2e.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[[90m4:19:05 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:25:36 PM[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.e2e.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[[90m4:25:36 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:25:40 PM[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.e2e.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[[90m4:25:40 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:53:04 PM[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.e2e.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[[90m4:53:04 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:53:06 PM[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.e2e.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[91merror[0m[90m TS6059: [0mFile '/var/www/Nextsafar/apps/api/vitest.config.ts' is not under 'rootDir' '/var/www/Nextsafar/apps/api/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Matched by default include pattern '**/*'
+
+[[90m4:53:06 PM[0m] Found 2 errors. Watching for file changes.
+

@@ -28,7 +28,6 @@ exports.AppModule = AppModule = __decorate([
         imports: [
             config_1.ConfigModule.forRoot({
                 isGlobal: true,
-                envFilePath: '../../.env',
             }),
             nestjs_pino_1.LoggerModule.forRoot({
                 pinoHttp: {

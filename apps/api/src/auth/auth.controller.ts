@@ -1,39 +1,30 @@
-import { Body, Controller, Post, Get, HttpCode, HttpStatus, UseGuards } from '@nestjs/common';
+import { Controller, Post, Body, Get, UseGuards, Request } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { LoginDto, loginSchema } from './dto/login.dto';
-import { RegisterDto, registerSchema } from './dto/register.dto';
-import { ZodValidationPipe } from '../common/pipes/zod-validation.pipe';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
-import { RolesGuard } from './guards/roles.guard';
-import { Roles } from './decorators/roles.decorator';
-import { CurrentUser } from './decorators/current-user.decorator';
 
 @Controller('auth')
 export class AuthController {
-  constructor(private authService: AuthService) {}
+  constructor(private readonly authService: AuthService) {}
 
   @Post('login')
-  @HttpCode(HttpStatus.OK)
-  async login(@Body(new ZodValidationPipe(loginSchema)) dto: LoginDto) {
-    return this.authService.login(dto);
+  async login(@Body() loginDto: any) {
+    return this.authService.login(loginDto);
   }
 
   @Post('register')
-  @HttpCode(HttpStatus.CREATED)
-  async register(@Body(new ZodValidationPipe(registerSchema)) dto: RegisterDto) {
-    return this.authService.register(dto);
+  async register(@Body() registerDto: any) {
+    return this.authService.register(registerDto);
   }
 
-  @Get('profile')
   @UseGuards(JwtAuthGuard)
-  async getProfile(@CurrentUser() user: any) {
-    return this.authService.getProfile(user.userId);
+  @Get('profile')
+  async getProfile(@Request() req: any) {
+    return this.authService.getProfile(req.user.userId);
   }
 
+  @UseGuards(JwtAuthGuard)
   @Get('admin-only')
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles('admin', 'super_admin')
-  async adminOnlyRoute(@CurrentUser() user: any) {
-    return { success: true, data: { message: `Welcome Admin ${user.mobile}!` } };
+  async adminOnly(@Request() req: any) {
+    return this.authService.adminOnly(req.user);
   }
 }

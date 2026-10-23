@@ -29,7 +29,7 @@ USER nestjs
 WORKDIR /app/apps/api
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=5 \
-  CMD curl -f http://localhost:3000/api/v1/auth/login || exit 1
+  CMD curl -f http://localhost:3000/api/v1/hotels || exit 1
 
 EXPOSE 3000
 CMD ["tsx", "src/main.ts"]
