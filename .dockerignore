@@ -1,0 +1,58 @@
+# Dependencies
+node_modules
+**/node_modules
+.pnpm-store
+
+# Build outputs (برای جلوگیری از کپی build های local)
+**/dist
+**/.next
+**/build
+
+# Git and IDE
+.git
+.gitignore
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs and temp files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage
+.nyc_output
+
+# Environment (NEVER put secrets in images)
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.*
+
+# Docker related
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Docs
+*.md
+LICENSE
+docs/
+
+# Test files
+**/__tests__
+**/*.test.ts
+**/*.spec.ts
+**/test
+**/coverage
+
+# Backups and temp
+backups/
+logs/
+*.bak
+*.tmp

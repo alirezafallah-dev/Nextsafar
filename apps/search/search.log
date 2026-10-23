@@ -1,0 +1,121 @@
+$ node dist/main.js
+◇ injected env (8) from .env
+{"level":30,"time":1792743321994,"pid":39454,"hostname":"alireza-System-Product-Name","name":"SearchService","msg":"🚀 Search Service is running on http://localhost:3001"}
+{"level":30,"time":1792743321994,"pid":39454,"hostname":"alireza-System-Product-Name","name":"SearchService","msg":"📚 API Documentation: http://localhost:3001/documentation"}
+{"level":30,"time":1792743321996,"pid":39454,"hostname":"alireza-System-Product-Name","name":"RedisService","msg":"✅ Connected to Redis"}
+[08:15:21 UTC] INFO: Server listening at http://127.0.0.1:3001
+[08:15:21 UTC] INFO: Server listening at http://192.168.70.197:3001
+[08:15:21 UTC] INFO: Server listening at http://172.18.0.1:3001
+[08:15:29 UTC] INFO: incoming request
+    reqId: "req-1"
+    req: {
+      "method": "GET",
+      "url": "/health",
+      "host": "localhost:3001",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 53486
+    }
+[08:15:29 UTC] INFO: request completed
+    reqId: "req-1"
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 4.682867999999871
+{"level":30,"time":1792743329806,"pid":39454,"hostname":"alireza-System-Product-Name","name":"SearchService","searchId":"ffa34a34-7684-48b9-b888-ce0f749fb5dc","type":"tour","msg":"🔍 Created search session"}
+[08:15:29 UTC] INFO: incoming request
+    reqId: "req-2"
+    req: {
+      "method": "POST",
+      "url": "/api/v1/search",
+      "host": "localhost:3001",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 53502
+    }
+[08:15:29 UTC] INFO: request completed
+    reqId: "req-2"
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 5.753491999999824
+[08:15:29 UTC] INFO: incoming request
+    reqId: "req-3"
+    req: {
+      "method": "GET",
+      "url": "/api/v1/search/ffa34a34-7684-48b9-b888-ce0f749fb5dc",
+      "host": "localhost:3001",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 53512
+    }
+{"level":30,"time":1792743329818,"pid":39454,"hostname":"alireza-System-Product-Name","name":"SearchService","searchId":"ffa34a34-7684-48b9-b888-ce0f749fb5dc","msg":"🔄 Cache miss, executing search"}
+[08:15:29 UTC] INFO: request completed
+    reqId: "req-3"
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 1.7597630000000208
+[08:15:29 UTC] INFO: incoming request
+    reqId: "req-4"
+    req: {
+      "method": "GET",
+      "url": "/api/v1/search/ffa34a34-7684-48b9-b888-ce0f749fb5dc/status",
+      "host": "localhost:3001",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 53518
+    }
+[08:15:29 UTC] INFO: request completed
+    reqId: "req-4"
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 0.753407000000152
+{"level":30,"time":1792743329838,"pid":39454,"hostname":"alireza-System-Product-Name","name":"StreamService","searchId":"ffa34a34-7684-48b9-b888-ce0f749fb5dc","msg":"📡 Starting SSE stream"}
+[08:15:29 UTC] INFO: incoming request
+    reqId: "req-5"
+    req: {
+      "method": "GET",
+      "url": "/api/v1/search/ffa34a34-7684-48b9-b888-ce0f749fb5dc/stream",
+      "host": "localhost:3001",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 53530
+    }
+{"level":30,"time":1792743329840,"pid":39454,"hostname":"alireza-System-Product-Name","name":"SearchService","searchId":"ffa34a34-7684-48b9-b888-ce0f749fb5dc","msg":"✅ Cache hit"}
+[08:15:29 UTC] INFO: request completed
+    reqId: "req-5"
+    res: {
+      "statusCode": 200
+    }
+    responseTime: 4.894927999999709
+{"level":30,"time":1792743329854,"pid":39454,"hostname":"alireza-System-Product-Name","name":"SearchService","searchId":"c184eac2-742f-42ad-ac23-579e670299ab","type":"tour","msg":"🔍 Created search session"}
+[08:15:29 UTC] INFO: incoming request
+    reqId: "req-6"
+    req: {
+      "method": "POST",
+      "url": "/api/v1/search",
+      "host": "localhost:3001",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 53540
+    }
+[08:15:29 UTC] INFO: request completed
+    reqId: "req-6"
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 1.8647869999995237
+[08:15:29 UTC] INFO: incoming request
+    reqId: "req-7"
+    req: {
+      "method": "POST",
+      "url": "/api/v1/search",
+      "host": "localhost:3001",
+      "remoteAddress": "127.0.0.1",
+      "remotePort": 53552
+    }
+{"level":30,"time":1792743329867,"pid":39454,"hostname":"alireza-System-Product-Name","name":"SearchService","searchId":"2bdf9904-8c5c-48eb-b10a-f68a68e3cf00","type":"hotel","msg":"🔍 Created search session"}
+[08:15:29 UTC] INFO: request completed
+    reqId: "req-7"
+    res: {
+      "statusCode": 201
+    }
+    responseTime: 1.2931280000002516
+Killed
+[ELIFECYCLE] Command failed with exit code 137.
