@@ -1,0 +1,26 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+allowBuilds:
+  '@scarf/scarf': true
+  esbuild: true
+  msgpackr-extract: true
+  workerd: true
+permissions:
+  '@prisma/client':
+    build: true
+  '@prisma/engines':
+    build: true
+  prisma:
+    build: true
+    skills: true
+  unrs-resolver:
+    build: false
+
+onlyBuiltDependencies:
+  - sharp
+  - unrs-resolver
+  - '@prisma/client'
+  - prisma
+  - esbuild
+  - '@swc/core'
